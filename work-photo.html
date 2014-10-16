@@ -2,6 +2,8 @@
 <head>
   <title>Ashley Wu</title>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!--   Favicon -->
+  <link href="Images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 <!-- styles -->
   <link rel="stylesheet" type="text/css" href="style.css" />
 <!-- fonts -->
@@ -12,7 +14,8 @@
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
- <!--  Nav Bar Top -->
+
+<!--  Main Nav -->
    <div id="nav-bar">
     <div id="navSection">
      <ul>
@@ -49,77 +52,99 @@
       </li>
     </div>
    </div>
+<!-- End Main Nav -->
 
-<!-- End Nav Bar Top -->
-
-<!-- Body -->
+<!-- Photo Body -->
 
 <div class="body-content">
-    <div class="project-grid">
-      <div id="work-body">
+<!-- Page Header -->
+    <div class="page-head">
+      <img src="Images/Nav/work-black.png" class="icon-large">
+      <h1>MY WORK.</h1>
+    </div>
+<!-- Work Nav -->
+    <div id="work-nav">
+      <a href="work-design.html"><p id="design-nav">Design</p></a>
+        &nbsp;&nbsp;/&nbsp;&nbsp;
+      <a href="work-projects.html"><p id="project-nav">Projects</p></a>
+        &nbsp;&nbsp;/&nbsp;&nbsp;
+      <a href="work-photo.html"><p class="selected-nav" id="photo-nav">Photography</p></a>
+    </div>
+  
+  <div id="work-body">  
 
-          <div class="page-head">
-            <img src="Images/Nav/work-black.png" class="icon-small">
-            <h1>MY WORK.</h1>
-          </div>
-
-          <div id="work-nav">
-            <a href="work-design.html"><p id="design-nav">Design</p></a>
-            &nbsp;&nbsp;/&nbsp;&nbsp;
-            <a href="work-projects.html"><p id="project-nav">Projects</p></a>
-            &nbsp;&nbsp;/&nbsp;&nbsp;
-            <a href="work-photo.html"><p class="selected-nav" id="photo-nav">Photography</p></a>
-          </div>
-
-          <div class="work-container">
-            <h2 class="head">SPOON UNIVERSITY - <a href="http://nu.spoonuniversity.com/print-magazine/">PRINT MAGAZINE</a></h1>
+          <div class="photo-container">
+            <!-- <h2 class="head">ILLUMINE CHICAGO</h1>
             <p class="info"> 
-              Spoon University is a publication and network dedicated to food and dining for college students. Northwestern University's print magazine has an audience of over 2500. As creative director, I manage the design team, plan and direct photoshoots, as well as design and illustrate pages.
-            </p>
-            <div class="span4">
+              Illumine is a publication that highlights yoga and yoga lifestyle based in Chicago. As art and photo intern, I conceptualized the style guide with the creative director and advised him on magazine elements for the first print issue, published in September 2013. I helped brand the publication from the ground up by conducting photoshoots, designing pages, creating graphics and editing editorial content.
+            </p> -->
+            <div class="photo-column">
               <a href="Images/Pages/bbq.png" target="_blank"><img src="Images/Illumine/feet-first.jpg" class="thumbnail"></a>
               <!-- <span class="pub">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> -->
             </div>
-            <div class="span4">
-              <img src="Images/Pages/peach-thumb.png" class="thumbnail">
-            </div>
-            <div class="span4">
-              <img src="Images/Pages/gluten-thumb.png" class="thumbnail">
-            </div>
-          </div>
-
-          <div class="work-container">
-            <div class="span4">
-              <img src="Images/Pages/fish-thumb.png" class="thumbnail">
-             <!--  <span class="pub">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> -->
-            </div>
-            <div class="span4">
-              <img src="Images/Pages/cookie-thumb.png" class="thumbnail">
-            </div>
-            <div class="span4">
-              <img src="Images/Pages/soup-thumb.png" class="thumbnail">
-            </div>
-          </div>
-
-          <!-- <div class="work-container">
-            <h2 class="head">ILLUMINE CHICAGO</h1>
-            <div class="span4">
-              <img src="Images/Illumine/feet-first.jpg" class="thumbnail">
-              <p> LKJFALKSJFEOIAWMEFKLASJDGIAJSKLFSLKDFJALKSDJF</p>
-            </div>
-            <div class="span4">
-              <img src="Images/Illumine/ink.jpg" class="thumbnail">
-            </div>
-            <div class="span4">
+            <div class="photo-column">
               <img src="Images/Illumine/fly-yoga.jpg" class="thumbnail">
             </div>
           </div>
 
-          <div class="work-section">
-            <h2 class="head">PROJECTS</h1>
-            <img src="Images/Illumine/feet-first.jpg" class="thumbnail">
-            <img src="Images/Illumine/ink.jpg" class="thumbnail">
-          </div> -->
+          <div class="photo-container">
+         <!--    <h2 class="head">SHOP SPERO</h1>
+            <p class="info"> 
+              <a href="http://www.shop-spero.com/">Shop Spero</a> is an online vintage and second-hand clothing store that launched in October 2013. It partners with Build Hope International and donates 20% of its proceeds to the Build Hope Dream fund in Cambodia. I was commissioned to photograph models and clothes for the website's launch.
+            </p> -->
+            <div class="photo-column">
+              <img src="Images/Illumine/paddleboard.png" class="thumbnail">
+            </div>
+            <div class="photo-column">
+              <img src="Images/annie-adams.jpg" class="thumbnail">
+            </div>
+          </div>
+
+        <div class="photo-container">
+            <div class="photo-column">
+              <img src="Images/Vicky.jpg" class="thumbnail">
+            </div>
+            <div class="photo-column">
+              <img src="Images/smoke.jpg" class="thumbnail">
+            </div>
+        </div>
+
+        <div class="photo-container">
+            <div class="photo-column">
+              <img src="Images/pop-up-art.jpg" class="thumbnail">
+            </div>
+            <div class="photo-column">
+              <img src="Images/annette-foster.jpg" class="thumbnail">
+            </div>
+        </div>
+
+        <div class="photo-container">
+            <div class="photo-column">
+              <img src="Images/lily.png" class="thumbnail">
+            </div>
+            <div class="photo-column">
+              <img src="Images/manhattan.png" class="thumbnail">
+            </div>
+        </div>
+
+        <div class="photo-container">
+            <div class="photo-column">
+              <img src="Images/cabaret.jpg" class="thumbnail">
+            </div>
+            <div class="photo-column">
+              <img src="Images/lost-in-barca.jpg" class="thumbnail">
+            </div>
+        </div>
+
+        <div class="photo-container">
+            <div class="photo-column">
+              <img src="Images/portabello.jpg" class="thumbnail">
+            </div>
+            <div class="photo-column">
+              <img src="Images/pride.jpg" class="thumbnail">
+            </div>
+        </div>
+          
       </div>
     </div>
 </div
