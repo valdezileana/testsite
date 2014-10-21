@@ -1,16 +1,28 @@
 body{
-	margin:0px;
+	margin:0 auto;
+	max-width:480px;
 	background-image: url('Images/seamless_paper_texture.png');
+	/*max-width:114.29em;*/
 }
 
 /*Main Nav*/
 
 #nav-bar{
 	height:150px;
+	max-width: 100%;
 }
 
-#navSection{
+/*#navSection{
 	width: 65%;
+	margin: 0 auto;
+	height: 125px;
+	padding-top: 0.15625%;
+	font-family: Carrois Gothic;
+	text-align: center;
+	border-bottom: 1px solid #939598;
+}*/
+
+#navSection{
 	margin: 0 auto;
 	height: 125px;
 	padding-top: 0.15625%;
@@ -20,11 +32,11 @@ body{
 }
 
 #navSection ul{
-	padding:0px;
+	padding:0;
 }
 
 li.section{
-	margin: 0px 6% 0px 6%;
+	margin: 0 6% 0 6%;
 	display:inline-block;
 	text-align:center;
 }
@@ -34,7 +46,7 @@ li.selected-nav{
 }
 
 h4{
-	margin:0px 0px 10px 0px;
+	margin:0 0 10px 0;
 	color:#939598;
 	letter-spacing:1.2px;
 }
@@ -71,7 +83,7 @@ h4{
 
 #hero{
 	font-family:Open Sans Condensed;
-	font-size:51px;
+	font-size:10em;
 	letter-spacing:4px;
 	margin:0px 0px -20px 0px;
 	text-align:center;
@@ -79,7 +91,7 @@ h4{
 
 #visual{
 	font-family: Roboto Condensed;
-	font-size:50px;
+	font-size:3.5714em;
 	letter-spacing:2px;
 	margin:auto;
 	color:#1aa8ad;
@@ -274,5 +286,15 @@ div.social li{
 a{
 	color:#939598;
 	text-decoration:none;
+}
+
+@media screen and (max-width: 600px) {
+  .mast,
+  .intro,
+  .main,
+  .footer {
+    float: none;
+    width: auto;
+  }
 }
 
