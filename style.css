@@ -1,11 +1,9 @@
 body{
 	margin:0px;
-	/*background-image: url('Images/sandpaper.png');*/
-	/*background-image: url('Images/old_moon.png');*/
-	/*background-image: url('Images/squared_metal.png');*/
 	background-image: url('Images/seamless_paper_texture.png');
-	/*background-image: url('Images/background.png');*/
 }
+
+/*Main Nav*/
 
 #nav-bar{
 	height:150px;
@@ -13,20 +11,21 @@ body{
 
 #navSection{
 	width: 65%;
-	margin:0 auto;
+	margin: 0 auto;
 	height: 125px;
-	padding-top: 2.5px;
-	font-family:Carrois Gothic;
-	text-align:center;
+	/*padding-top: 2.5px;*/
+	padding-top: 0.15625%;
+	font-family: Carrois Gothic;
+	text-align: center;
 	border-bottom: 1px solid #939598;
 }
 
 #navSection ul{
-	padding:0px;
+	padding:0;
 }
 
 li.section{
-	margin: 0px 6% 0px 6%;
+	margin: 0 6% 0 6%;
 	display:inline-block;
 	text-align:center;
 }
@@ -36,7 +35,7 @@ li.selected-nav{
 }
 
 h4{
-	margin:0px 0px 10px 0px;
+	margin:0 0 10px 0;
 	color:#939598;
 	letter-spacing:1.2px;
 }
@@ -113,6 +112,11 @@ div.social li{
 	letter-spacing: 2px;
 }
 
+.page-head h1{
+	font-size:80px;
+	margin:0;
+}
+
 .icon-large{
 	height:80px;
 	float:left;
@@ -120,10 +124,6 @@ div.social li{
 	padding:15px 12px 0 100px;
 }
 
-.page-head h1{
-	font-size:80px;
-	margin:0;
-}
 
 #work-nav{
 	padding-top: 30px;
@@ -149,6 +149,7 @@ div.social li{
 	width:85%;
 	margin:0 auto;
 	padding-top:20px;
+	min-height: 450px;
 }
 
 .photo-container{
@@ -171,6 +172,16 @@ div.social li{
 
 .two-column{
 	width: 44%;
+	float: left;
+	padding: 15px;
+	margin: 10px 15px 34px 15px;
+	border: 1px solid #939598;
+	box-shadow: 4px 6px 6px -2px rgba(0,0,0,.3);
+}
+
+.two-column-projects{
+	width: 44%;
+	min-height:456px;
 	float: left;
 	padding: 15px;
 	margin: 10px 15px 34px 15px;
@@ -209,7 +220,7 @@ div.social li{
 	font-family:Source Sans Pro;
 	font-size:16px;
 	font-weight:300;
-	margin:15px 0 20px 15px;
+	margin:15px;
 
 }
 
@@ -219,11 +230,12 @@ div.social li{
 	font-weight:300;
 }
 
+/*About Me*/
+
 #headshot{
-	height:355px;
 	padding:15px;
 	border: 1px solid #939598;
-	margin: 15px 35px 0 80px;
+	margin: 0 50px 0 15px;
 	box-shadow: 4px 6px 6px -2px rgba(0,0,0,.3);
 }
 
@@ -231,10 +243,9 @@ div.social li{
 	float:left;
 	display:inline-block;
 	font-family:Source Sans Pro;
-	font-size:20px;
+	font-size:17.5px;
 	font-weight:300;
-	margin-top:10px;
-/*	padding-top: 65px;*/
+	margin:0px;
 }
 
 .span6{
@@ -247,16 +258,22 @@ div.social li{
 	font-family: Roboto Condensed;
 	color: #939598;
 	text-align: center;
-	padding-bottom:30px;
+	padding:30px 0 30px 0;
+	clear:both;
 }
 
-.asdf{
-	font-family: Roboto Condensed;
-	color: #939598;
-	text-align: center;
+#contact-me{
+	width:78%;
+	float:left;
+	display:inline;
+	padding-left: 11%;
+	font-family: Source Sans Pro;
+	font-size:20px;
 }
+
 
 a{
 	color:#939598;
 	text-decoration:none;
 }
+
