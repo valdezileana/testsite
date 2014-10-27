@@ -264,13 +264,25 @@ a{
 	text-decoration:none;
 }
 
-@media screen and (max-width: 600px) {
-  .mast,
+
+/* media queries */
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+	.mast,
   .intro,
   .main,
   .footer {
     float: none;
     width: auto;
   }
+}
+
+@media screen and (max-width: 500px) {
+	.menu-icons {
+		display:none;
+	}
 }
 
