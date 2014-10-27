@@ -3,17 +3,15 @@
 <html>
 <head>
   <title>Ashley Wu</title>
-<!-- meta data -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
 <!-- favicon -->
   <link href="Images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 <!-- styles -->
-  <link rel="stylesheet" type="text/css" href="style.css" media="only screen and (max-device-width:1600px)"/>
-  <link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width:480px)" />
-  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="mobile.css" type="text/css" rel="stylesheet" media="only screen and (max-device-width:480px)" />
 <!-- fonts -->
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600|Carrois+Gothic|Open+Sans+Condensed:700|Roboto+Condensed:300' rel='stylesheet' type='text/css'>
-  <!-- javascript -->
+<!-- javascript -->
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
@@ -21,19 +19,18 @@
 </head>
 <body>
 <!--  Main Nav -->
-  <div id="nav-bar">
-    <div id="navSection">
+    <div id="navBar">
       <ul>
         <li class="section">
           <a href="index.html">
             <h4>home</h4>
-            <img src="Images/Nav/home-dark.png" id="home">
+            <img src="Images/Nav/home-dark.png" id="home" class="selected-nav">
           </a>
         </li>
         <li class="section">
           <a href="work-design.html">
             <h4>work</h4>
-            <img src="Images/Nav/work-dark.png" id="work" class="selected-nav">
+            <img src="Images/Nav/work-dark.png" id="work">
           </a>
         </li>
         <li class="section">
@@ -56,9 +53,7 @@
         </li>
       </ul>
     </div>
-   </div>
 <!-- End Main Nav -->
-
 <!-- Design Body -->
 <div class="body-content">
   <!-- Page Header -->

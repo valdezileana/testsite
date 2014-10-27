@@ -1,17 +1,11 @@
 body{
 	margin:0;
 	background-image: url('Images/seamless_paper_texture.png');
-/*	max-width:1040px;*/
 }
 
 /*Main Nav*/
 
-#nav-bar{
-	height:150px;
-	max-width: 100%;
-}
-
-#navSection{
+#navBar{
 	width: 65%;
 	margin: 0 auto;
 	height: 125px;
@@ -21,14 +15,9 @@ body{
 	border-bottom: 1px solid #939598;
 }
 
-#navSection ul{
-	padding:0;
-}
-
 li.section{
 	margin: 0 6% 0 6%;
 	display:inline-block;
-	text-align:center;
 }
 
 li.selected-nav{
@@ -42,9 +31,7 @@ h4{
 }
 
 #home, #work, #contact, #about, #resume{
-	display:block;
 	float:left;
-	text-align:center;
 	padding-bottom: 10px;
 	height:52px;
 }
@@ -55,25 +42,26 @@ h4{
 
 #about {
 	height:54px;
-	padding: 0px 0px 8px 5px;
+	padding: 0 0 8px 5px;
 }
 
 /*Body*/
 
 .body-content{
-	width:78%;
+	width:65%%;
 	margin-left:auto;
 	margin-right:auto;
 	padding-top:40px;
 }
 
+/*Home Page*/
 #name-plate{
 	margin-top:100px;
 }
 
 #hero{
 	font-family:Open Sans Condensed;
-	font-size:800%;
+	font-size:9em;
 	letter-spacing:4px;
 	margin:0px 0px -20px 0px;
 	text-align:center;
@@ -81,7 +69,7 @@ h4{
 
 #visual{
 	font-family: Roboto Condensed;
-	font-size:3.5714em;
+	font-size:3em;
 	letter-spacing:2px;
 	margin:auto;
 	color:#1aa8ad;
@@ -111,6 +99,7 @@ div.social li{
 .page-head{
 	font-family:Open Sans Condensed;
 	letter-spacing: 2px;
+	margin:0 auto;
 }
 
 .page-head h1{
@@ -121,10 +110,10 @@ div.social li{
 .icon-large{
 	height:80px;
 	float:left;
-	display:inline;
-	padding:15px 12px 0 100px;
+	padding:15px 12px 0 0;
 }
 
+/*Design Nav*/
 
 #work-nav{
 	padding-top: 30px;
@@ -137,7 +126,6 @@ div.social li{
 	font-family:Carrois Gothic;
 	display:inline;
 	padding-bottom:10px;
-	margin:0px;
 }
 
 .selected-nav{
@@ -145,10 +133,7 @@ div.social li{
 	font-weight:bold;
 }
 
-
 .work-container{
-	width:85%;
-	margin:0 auto;
 	padding-top:20px;
 	min-height: 450px;
 }
@@ -156,7 +141,7 @@ div.social li{
 .photo-container{
 	width:85%;
 	margin:0 auto;
-	padding:20px 0px 20px 0px;
+	padding:20px 0 20px 0;
 	height:215px;
 }
 
@@ -167,17 +152,17 @@ div.social li{
 	letter-spacing: 2.5px;
 }
 
-.row{
+/*.row{
 	margin:0px;
-}
+}*/
 
 .two-column{
 	width: 44%;
 	float: left;
-	padding: 15px;
-	margin: 10px 15px 34px 15px;
+	padding: 10px;
+	margin: 10px 15px 25px 15px;
 	border: 1px solid #939598;
-	box-shadow: 4px 6px 6px -2px rgba(0,0,0,.3);
+	box-shadow: 4px 7px 6px -1px rgba(0,0,0,.3);
 }
 
 .two-column-projects{
@@ -222,6 +207,7 @@ div.social li{
 	font-size:16px;
 	font-weight:300;
 	margin:15px;
+	width:100%;
 
 }
 
