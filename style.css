@@ -166,7 +166,7 @@ div.social li{
 }
 
 .two-column-projects{
-	width: 44%;
+	width: 43%;
 	min-height:456px;
 	float: left;
 	padding: 15px;
@@ -331,6 +331,7 @@ a{
 		margin: 0;
 	}
 
+
 	.icon-large {
 		height: 45px;
 	}
@@ -341,9 +342,39 @@ a{
 	}
 
 	.two-column{
-		width:80%;
+		width:90%;
 		float:none;
 	}
+
+	.two-column-projects {
+		float:none;
+		min-height:0;
+		width:100%;
+		padding: 10px;
+		margin: 10px 15px 34px 15px;
+		border: 1px solid #939598;
+		box-shadow: 4px 6px 6px -2px rgba(0,0,0,.3);
+	}
+
+	/*about me*/
+
+	#headshot{
+		padding:5px;
+		border: 1px solid #939598;
+		margin-bottom: 20px;
+		box-shadow: 4px 6px 6px -2px rgba(0,0,0,.3);
+	}
+
+	#about-me{
+		font-size:15px;
+		margin:0;
+	}
+
+	.span6{
+		width:100%;
+	}
+
+
 
 }
 
