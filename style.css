@@ -189,6 +189,15 @@ h4{
 	box-shadow: 4px 6px 6px -2px rgba(0,0,0,.3);
 }
 
+.two-column-about{
+	width: 44%;
+	float: left;
+	padding: 10px;
+	margin: 10px 15px 25px 15px;
+	border: 1px solid #939598;
+	box-shadow: 4px 7px 6px -1px rgba(0,0,0,.3);
+}
+
 .details{
 	width:44%;
 	float:left;
@@ -282,6 +291,14 @@ a{
 	.two-column{
 		width:43%;
 	}
+
+	.span6{
+		width:40%;
+	}
+
+	#about-me{
+		font-size:15px;
+	}
 }
 
 @media screen and (max-width: 1200px) {
@@ -310,12 +327,16 @@ a{
 		width:90%;
 	}
 
+	.two-column-photo{
+		width: 40%;
+	}
+
 	.info{
 		font-size:15px;
 	}
 	
 	.span6{
-		width:100%;
+		width:40%;
 		padding-top:30px;
 	}
 
@@ -400,6 +421,18 @@ a{
 		border: 1px solid #939598;
 		box-shadow: 4px 6px 6px -2px rgba(0,0,0,.3);
 	}
+
+	.two-column-about {
+		float:none;
+		min-height:0;
+		width:100%;
+		padding: 10px;
+		margin: 10px 15px 34px 15px;
+		border: 1px solid #939598;
+		box-shadow: 4px 6px 6px -2px rgba(0,0,0,.3);
+	}
+
+
 
 	/*about me*/
 
