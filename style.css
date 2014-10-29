@@ -278,10 +278,13 @@ a{
 
 /* media queries */
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1349px) {
+	.two-column{
+		width:43%;
+	}
 }
 
-@media screen and (max-width: 1204px) {
+@media screen and (max-width: 1200px) {
 	#navBar{
 		width:100%;
 	}
