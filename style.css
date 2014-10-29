@@ -1,3 +1,13 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-size:30px;
+  color:black;
+  padding:0 15px 0 15px;
+  text-align: center;
+}
+
 body{
 	margin:0;
 	background-image: url('Images/seamless_paper_texture.png');
@@ -13,6 +23,10 @@ body{
 	font-family: Carrois Gothic;
 	text-align: center;
 	border-bottom: 1px solid #939598;
+}
+
+#navBar ul{
+	padding-left:0;
 }
 
 li.section{
@@ -77,21 +91,21 @@ h4{
 }
 
 .social{
-	list-style-type: none;
-    padding-top: 100px;
+    padding-top: 220px;
     padding-bottom:50px;
-    width: 18.5%;
-    margin: 0 auto;
 }
 
-div.social li{
-	float:left;
+
+.social ul{
+	text-align: center;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.social ul li {
 	display:inline;
-}
-
-.icon{
-	height:40px;
-	margin-right:20px;
+	margin-left: 0;
+	padding-left: 0;
 }
 
 /*Portfolio*/
@@ -206,8 +220,6 @@ div.social li{
 	font-size:16px;
 	font-weight:300;
 	margin:15px;
-	width:100%;
-
 }
 
 .pub{
@@ -266,17 +278,57 @@ a{
 
 /* media queries */
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1440px) {
 }
 
-@media screen and (max-width: 768px) {
-	.mast, .intro, .main,.footer {
-    	float: none;
-    	width: auto;
-  }
+@media screen and (max-width: 1204px) {
+	#navBar{
+		width:100%;
+	}
+
+	li.section{
+	margin: 0 4% 0 4%;
+	display:inline-block;
+	}
+
+	.body-content{
+		width:80%;
+	}
+
+	#hero{
+		font-size: 7em;
+	}
+
+	.two-column{
+		width:90%;
+	}
+
+	.two-column-projects{
+		width:90%;
+	}
+
+	.info{
+		font-size:15px;
+	}
+	
+	.span6{
+		width:100%;
+		padding-top:30px;
+	}
+
+	#about-me{
+		font-size:15px;
+	}
 }
 
-@media screen and (max-width: 500px) {
+
+/*@media screen and (max-width: 1000px) {
+	.two-column{
+		width:43%;
+	}
+}*/
+
+@media screen and (max-width: 600px) {
 	.menu-icons {
 		display:none;
 	}
@@ -312,16 +364,6 @@ a{
 
 	.icon {
 		height: 1.8em;
-	}
-
-	.social{
-		width: 70%;
-	}
-
-	.social ul{
-		padding: 0;
-		margin: 0 auto;
-		width: 63%;
 	}
 
 	/*work*/
@@ -374,19 +416,57 @@ a{
 		width:100%;
 	}
 }
+/*phone*/
 
-@media screen and (max-width: 328px) {
-	#navBar{
-		width: 100%;
-		height:40px;
-		padding-top: 4%;
-		font-family: Carrois Gothic;
-		text-align: center;
-	}
-
+@media screen and (max-width: 320px) {
+/* Styles */
 	li.section{
 		margin: 0 .5% 0 .5%;
-		display:inline-block;
+	}
+
+	#hero{
+		font-size: 3.5em;
+	}
+
+	#visual{
+		font-size:1.5em;
+	}
+
+	#copyright{
+		font-size: 13px;
+	}
+
+	[class*="fontawesome-"]:before {
+		font-family: 'FontAwesome', sans-serif;
+		font-size:18px;
+		color:black;
+		margin-right:17px;
+	}
+
+	h4{
+		font-size: 14px;
+	}
+
+	/*work*/
+
+	.body-content{
+		width:84%;
+	}
+
+	.page-head h1 {
+		font-size: 45px;
+		margin: 0;
+	}
+
+
+	.icon-large {
+		height: 40px;
+		padding: 12px 10px 0 0;
+	}
+
+	#design-nav, #project-nav, #photo-nav {
+		font-size: 13px;
 	}
 }
+
 
