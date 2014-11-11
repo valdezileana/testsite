@@ -20,7 +20,7 @@ body{
 	margin: 0 auto;
 	height: 125px;
 	padding-top: 0.15625%;
-	font-family: Carrois Gothic;
+	font-family: "Carrois Gothic";
 	text-align: center;
 	border-bottom: 1px solid #939598;
 }
@@ -74,7 +74,7 @@ h4{
 }
 
 #hero{
-	font-family:Open Sans Condensed;
+	font-family:"Open Sans Condensed";
 	font-size:9em;
 	letter-spacing:4px;
 	margin:0px 0px -20px 0px;
@@ -82,7 +82,7 @@ h4{
 }
 
 #visual{
-	font-family: Roboto Condensed;
+	font-family: "Roboto Condensed";
 	font-size:3em;
 	letter-spacing:2px;
 	margin:auto;
@@ -108,11 +108,15 @@ h4{
 	margin-left: 0;
 	padding-left: 0;
 }
+/*
+.social-icon{
+	color:#939598;
+}*/
 
 /*Portfolio*/
 
 .page-head{
-	font-family:Open Sans Condensed;
+	font-family:"Open Sans Condensed";
 	letter-spacing: 2px;
 	margin:0 auto;
 }
