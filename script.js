@@ -3,7 +3,7 @@ $(document).ready(function(){
 // Fancybox Function
 $(".fancybox").fancybox();
 
-//Turn Nav Bar icons black when hovered over, temp solution (there may be a faster way)
+//Turn Nav Bar icons black when hovered over, temp solution (there may be a simpler way)
 	$("#home").hover(function(){
 		$("#home").attr("src", "Images/Nav/home-hover.png");
 	});
@@ -43,8 +43,6 @@ $(".fancybox").fancybox();
 	$("#resume").mouseleave(function(){
 		$("#resume").attr("src", "Images/Nav/resume.png");
 	});
-
-//How do I make the icon unclickable once you're on the page?
 
 
 //Turn social fontawesome icons gray when hovered over
