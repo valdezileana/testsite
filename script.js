@@ -5,23 +5,23 @@ $(".fancybox").fancybox();
 
 //Turn Nav Bar icons black when hovered over, temp solution (there may be a faster way)
 	$("#home").hover(function(){
-		$("#home").attr("src", "Images/Nav/home-black.png");
+		$("#home").attr("src", "Images/Nav/home-hover.png");
 	});
 
 	$("#home").mouseleave(function(){
-		$("#home").attr("src", "Images/Nav/home-dark.png");
+		$("#home").attr("src", "Images/Nav/home.png");
 	});
 
 	$("#work").hover(function(){
-		$("#work").attr("src", "Images/Nav/work-black.png");
+		$("#work").attr("src", "Images/Nav/work-hover.png");
 	});
 
 	$("#work").mouseleave(function(){
-		$("#work").attr("src", "Images/Nav/work-dark.png");
+		$("#work").attr("src", "Images/Nav/work.png");
 	});
 
 	$("#about").hover(function(){
-		$("#about").attr("src", "Images/Nav/about-black.png");
+		$("#about").attr("src", "Images/Nav/about-hover.png");
 	});
 
 	$("#about").mouseleave(function(){
@@ -29,19 +29,19 @@ $(".fancybox").fancybox();
 	});
 
 	$("#contact").hover(function(){
-		$("#contact").attr("src", "Images/Nav/contact-black.png");
+		$("#contact").attr("src", "Images/Nav/contact-hover.png");
 	});
 
 	$("#contact").mouseleave(function(){
-		$("#contact").attr("src", "Images/Nav/contact-dark.png");
+		$("#contact").attr("src", "Images/Nav/contact.png");
 	});
 
 	$("#resume").hover(function(){
-		$("#resume").attr("src", "Images/Nav/resume-black.png");
+		$("#resume").attr("src", "Images/Nav/resume-hover.png");
 	});
 
 	$("#resume").mouseleave(function(){
-		$("#resume").attr("src", "Images/Nav/resume-dark.png");
+		$("#resume").attr("src", "Images/Nav/resume.png");
 	});
 
 //How do I make the icon unclickable once you're on the page?

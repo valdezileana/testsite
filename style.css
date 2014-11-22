@@ -44,19 +44,24 @@ h4{
 	letter-spacing:.086em;
 }
 
-#home, #work, #contact, #about, #resume{
-	float:left;
+#home, #work, #contact{
 	padding-bottom: 10px;
 	height:52px;
 }
 
-#resume{
-	padding-left: 10px;
+#contact{
+	padding-bottom: 10px;
+	height:54px;
 }
 
-#about {
+#resume{
+	padding: 0 0 4px 12px;
+	height:55px;
+}
+
+#about{
 	height:54px;
-	padding: 0 0 8px 5px;
+	padding: 0 0 10px 2.5px;
 }
 
 /*Body*/
