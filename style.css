@@ -301,6 +301,34 @@ a{
 	}
 }
 
+@media screen and (max-width: 1280px) {
+	.body-content{
+		width:80%;
+	}
+
+	#hero{
+		font-size: 7em;
+	}
+
+	.two-column{
+		width:39%;
+	}
+
+	.info{
+		font-size:15px;
+	}
+	
+	.span6{
+		width:40%;
+		padding-top:30px;
+	}
+
+	#about-me{
+		font-size:15px;
+	}
+}
+
+
 @media screen and (max-width: 1200px) {
 	#navBar{
 		width:100%;
