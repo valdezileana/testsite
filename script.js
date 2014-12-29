@@ -6,6 +6,7 @@ $(".fancybox").fancybox();
 //Turn Nav Bar icons black when hovered over, temp solution (there may be a simpler way)
 	$("#home").hover(function(){
 		$("#home").attr("src", "Images/Nav/home-hover.png");
+		// $("#home").addClass("selected-nav");
 	});
 
 	$("#home").mouseleave(function(){
@@ -14,6 +15,7 @@ $(".fancybox").fancybox();
 
 	$("#work").hover(function(){
 		$("#work").attr("src", "Images/Nav/work-hover.png");
+		// $("#work").addClass("selected-nav");
 	});
 
 	$("#work").mouseleave(function(){

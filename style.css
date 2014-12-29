@@ -49,17 +49,17 @@ h4{
 }
 
 #home, #work, #contact{
-	padding-bottom: 10px;
+	padding:2px 0 10px 0;
 	height:52px;
 }
 
 #contact{
-	padding-bottom: 10px;
+	padding: 1px 0 10px 0;
 	height:54px;
 }
 
 #resume{
-	padding: 0 0 4px 12px;
+	padding: 6px 0 4px 12px;
 	height:55px;
 }
 
