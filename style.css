@@ -483,6 +483,16 @@ a:hover{
 		width:100%;
 	}
 }
+
+@media screen and (max-width: 500px) {
+
+	/*sandbox*/
+
+	.sand-item img{
+		width: 85%;
+	}
+}
+
 /*phone*/
 
 @media screen and (max-width: 320px) {
