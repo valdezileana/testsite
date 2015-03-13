@@ -499,6 +499,10 @@ a:hover{
 	.fontawesome-hand-left{
 		display:none;
 	}
+
+	#contact-me{
+		font-size: 15.5px;
+	}
 }
 
 /*phone*/
