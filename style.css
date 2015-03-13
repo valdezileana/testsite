@@ -491,6 +491,14 @@ a:hover{
 	.sand-item img{
 		width: 85%;
 	}
+
+	#headshot {
+		width: 85%;
+	}
+
+	.fontawesome-hand-left{
+		display:none;
+	}
 }
 
 /*phone*/
