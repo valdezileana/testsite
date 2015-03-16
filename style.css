@@ -472,11 +472,12 @@ a:hover{
 
 	/*about me*/
 
-	#headshot{
-		padding:5px;
-		border: 1px solid #939598;
-		margin-bottom: 20px;
-		box-shadow: 4px 6px 6px -2px rgba(0,0,0,.3);
+	#headshot {
+		width: 85%;
+	}
+
+	.fontawesome-hand-left{
+		display:none;
 	}
 
 	#about-me{
@@ -486,6 +487,10 @@ a:hover{
 
 	.span6{
 		width:100%;
+	}
+
+	#contact-me{
+		font-size: 15.5px;
 	}
 }
 
