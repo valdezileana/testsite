@@ -189,7 +189,7 @@ h4{
 }
 
 .project{
-	min-height: 480px;
+	min-height: 500px;
 }
 
 .two-column-about{
@@ -325,10 +325,6 @@ a:hover{
 
 	#hero{
 		font-size: 7em;
-	}
-
-	.two-column{
-		width:39%;
 	}
 
 	.info{
