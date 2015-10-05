@@ -2,7 +2,7 @@
 [class*="fontawesome-"] {
   font-family: 'FontAwesome', sans-serif;
   font-size: 23px;
-  color: black;
+  color: #333;
   padding: 0 15px 0 15px;
   text-align: center;
 }
@@ -214,19 +214,20 @@ h1 {
 
 /*About Me*/
 
-
 #headshot{
-	width: 33%;
+	width: 35%;
 	border: 1px dotted #CCCACA;
 	box-shadow: 4px 7px 6px -1px rgba(0,0,0,.2);
 	padding: 5px;
 	float: left;
-	margin-right: 50px;
 }
 
 .bio {
 	font-family: "Source Sans Pro";
 	font-size: 15px;
+	width: 50%;
+	float: right;
+	margin: 0;
 }
 
 .bio span {
@@ -272,8 +273,6 @@ h1 {
 	width: 275px;
 }
 
-
-
 .sand-item a:hover{
 	opacity: 0.7;
 }
@@ -287,68 +286,101 @@ a:hover{
 	color:#1aa8ad;
 }
 
-@media screen and (max-width: 1280px) {
-	.body-content{
-		width: 66%;
-	}
-
-	#hero{
-		font-size: 7em;
-	}
-
-}
-
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
 	#navBar{
 		width: 70%;
 	}
 
-	li.section{
-		margin: 0 4% 0 4%;
-		display: inline-block;
-	}
-
 	.body-content{
-		width: 70%;
+		width: 75%;
 	}
 
-	.two-column{
-		width: 90%;
-	}
-
-	.two-column-projects{
-		width: 90%;
-	}
-
-	.two-column-photo{
-		width: 40%;
-	}
-
-	#about-me{
-		font-size: 15px;
-	}
-}
-
-@media screen and (max-width: 1080px) {
-	#headshot {
-
+	#headshot{
+		width: 30%;
 	}
 
 	.bio {
-		font-size: 13px;
+		font-size: 14px;
+		width: 60%;
+	}
+
+	.bio span {
+		font-weight: bold;
+		font-size: 1.3em;
+		color: #1aa8ad;
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+	#hero {
+		font-size: 6.5em;
+	}
+
+	.body-content{
+		width: 87%;
+	}
+
+	li.section {
+		display: inline-block;
+	}
+
+	.two-column {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 815px) {
+	#home, #work, #contact {
+		padding: 2px 0 10px 0;
+		height: 35px;
+	}
+
+	#about {
+		height: 36px;
+		padding-bottom: 10px;
+	}
+
+	#resume {
+		padding: 6px 0 4px 8px;
+		height: 37px;
+	}
+
+	#about-me {
+		width: 70%;
+    	margin: 0 auto;
+	}
+
+	#headshot {
+		width: 60%;
+		text-align: center;
+		float: none;
+	}
+
+	.bio {
+		font-family: "Source Sans Pro";
+		font-size: 13px;
+		width: 70%;
+		float: none;
+		margin: 15px auto 0 auto;
+	}
+	
+}
+
+@media screen and (max-width: 794px) {
+	.body-content{
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 665px) {
 	.menu-icons {
 		display:none;
 	}
 
 	#navBar{
-		width: 100%;
-		height: 40px;
-		padding-top: 4%;
+		width: 95%;
+		height: 30px;
+		padding-top: 2%;
 	}
 
 	#navBar ul{
@@ -357,163 +389,126 @@ a:hover{
 	}
 
 	li.section{
-		margin: 0 3.5% 0 3.5%;
+		margin: 0 3.5%;
+	}
+
+	.section h4 {
+		margin-bottom: 5px;
 	}
 
 	/*home*/
 
-	#hero{
-		font-size: 4.5em;
-		letter-spacing: 2px;
-		margin: 0px 0px -10px 0px;
+	#name-plate {
+		font-size: 0.85em;
+		letter-spacing: 1px;
 	}
 
-	#visual{
-		font-size: 1.7em;
-		letter-spacing: 1.3px;
-		margin: auto;
-	}
-
-	.icon {
-		height: 1.8em;
+	#visual {
+		font-size: 1.5em;
+		letter-spacing: 1px;
 	}
 
 	/*work*/
 
-	.page-head h1 {
-		font-size: 3.2em;
-		margin: 0;
+	.pub-container {
+		min-height: 250px;
 	}
 
-
-	.icon-large {
-		height: 45px;
-	}
-
-	.info {
-		font-size: 13.5px;
-		width:90%;
-	}
-
-	.two-column{
-		width:90%;
-		float:none;
-	}
-
-	.two-column-projects {
-		float:none;
-		min-height:0;
-		width:100%;
-		padding: 10px;
-		margin: 10px 15px 34px 15px;
-		border: 1px solid #939598;
-		box-shadow: 4px 6px 6px -2px rgba(0,0,0,.3);
-	}
-
-	.two-column-about {
-		float:none;
-		min-height:0;
-		width:50px;
-		padding: 10px;
-		margin: 10px 15px 34px 15px;
-		border: 1px solid #939598;
-		box-shadow: 4px 6px 6px -2px rgba(0,0,0,.3);
+	.three-column {
+		width: 27%;
 	}
 
 	/*about me*/
 
 	#headshot {
-		width: 85%;
-	}
-
-	#about-me{
-		font-size:15px;
-		margin:0;
-	}
-
-	.span6{
-		width:100%;
-	}
-
-	#contact-me{
-		font-size: 15.5px;
+		width: 70%;
 	}
 
 	[class*="fontawesome-"]:before {
 		font-family: 'FontAwesome', sans-serif;
-		font-size: 18px;
-		color:black;
-		margin-right:17px;
+		font-size: 24px;
+		color: #333;
+		margin-right: 17px;
 	}
 
-	#copyright {
-		font-size: 0.9em;
+	.social {
+		padding-top: 95px;
 	}
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 525px) {
+	.body-content{
+		width: 75%;
+	}
 
-	/*sandbox*/
+	.three-column {
+		width: 90%;
+	}
+
+	.three-column:hover{
+		border-bottom: 0px;
+		opacity: 0.75;
+	}
 
 	.sand-item img{
 		width: 85%;
 	}
 
+}
+
+@media screen and (max-width: 440px) {
+	#name-plate h1{
+		font-size: 5em;
+	}
+
 	#headshot {
-		width: 85%;
-	}
-
-	.fontawesome-hand-left{
-		display:none;
-	}
-
-	#contact-me{
-		font-size: 15.5px;
+		width: 100%;
 	}
 }
 
 /*phone*/
 
 @media screen and (max-width: 320px) {
-/* Styles */
-	li.section{
-		margin: 0 .5% 0 .5%;
-	}
-
-	#hero{
-		font-size: 3.5em;
+	#name-plate h1{
+		font-size: 4em;
+		margin-bottom: 6px;
 	}
 
 	#visual{
-		font-size:1.5em;
+		font-size: 1.2em;
 	}
 
-	#copyright{
-		font-size: 13px;
+	li.section{
+		margin: 0 2.5% 0 2.5%;
 	}
 
-	h4{
-		font-size: 14px;
+	.section h4 {
+		font-size: 12px;
 	}
 
 	/*work*/
 
 	.body-content{
-		width:84%;
+		width: 84%;
+	}
+	
+	.pub, .info {
+		font-size: 13px;
 	}
 
-	.page-head h1 {
-		font-size: 45px;
-		margin: 0;
+	/*about*/
+
+	.bio {
+		width: 90%;
 	}
 
-
-	.icon-large {
-		height: 40px;
-		padding: 12px 10px 0 0;
+	[class*="fontawesome-"]:before {
+		font-family: 'FontAwesome', sans-serif;
+		font-size: 19px;
+		margin-right: 13px;
 	}
 
-	#design-nav, #project-nav, #photo-nav {
+	#copyright{
 		font-size: 13px;
 	}
 }
