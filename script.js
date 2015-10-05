@@ -1,47 +1,81 @@
 $(document).ready(function(){
 
-// Fancybox Function
-$(".fancybox").fancybox();
+// Fancybox Functions
+$("#single_1").fancybox()
+    .attr('rel', 'gallery')
+    .fancybox({
+        padding : 0
+    });
+
+$("#single_2").fancybox()
+    .attr('rel', 'gallery')
+    .fancybox({
+        padding : 0
+    });
+
+$("#single_3").fancybox()
+    .attr('rel', 'gallery')
+    .fancybox({
+        padding : 0
+    });
+
+$("#single_4").fancybox()
+    .attr('rel', 'gallery')
+    .fancybox({
+        padding : 0
+    });
+
+$("#being-first").fancybox()
+    .attr('rel', 'gallery')
+    .fancybox({
+        padding : 0
+    });
+
+$("#ebola").fancybox()
+    .attr('rel', 'gallery')
+    .fancybox({
+        padding : 0
+    });
 
 //Turn Nav Bar icons black when hovered over, temp solution (there may be a simpler way)
 	$("#home").hover(function(){
-		$("#home").attr("src", "Images/Nav/home-hover.png");
+		$("#home").attr("src", "img/Nav/home-hover.png");
 	});
 
 	$("#home").mouseleave(function(){
-		$("#home").attr("src", "Images/Nav/home.png");
+		$("#home").attr("src", "img/Nav/home.png");
 	});
 
 	$("#work").hover(function(){
-		$("#work").attr("src", "Images/Nav/work-hover.png");
+		$("#work").attr("src", "img/Nav/work-hover.png");
 	});
 
 	$("#work").mouseleave(function(){
-		$("#work").attr("src", "Images/Nav/work.png");
+		$("#work").attr("src", "img/Nav/work.png");
 	});
 
 	$("#about").hover(function(){
-		$("#about").attr("src", "Images/Nav/about-hover.png");
+		$("#about").attr("src", "img/Nav/about-hover.png");
 	});
 
 	$("#about").mouseleave(function(){
-		$("#about").attr("src", "Images/Nav/about.png");
+		$("#about").attr("src", "img/Nav/about.png");
 	});
 
 	$("#contact").hover(function(){
-		$("#contact").attr("src", "Images/Nav/contact-hover.png");
+		$("#contact").attr("src", "img/Nav/contact-hover.png");
 	});
 
 	$("#contact").mouseleave(function(){
-		$("#contact").attr("src", "Images/Nav/contact.png");
+		$("#contact").attr("src", "img/Nav/contact.png");
 	});
 
 	$("#resume").hover(function(){
-		$("#resume").attr("src", "Images/Nav/resume-hover.png");
+		$("#resume").attr("src", "img/Nav/resume-hover.png");
 	});
 
 	$("#resume").mouseleave(function(){
-		$("#resume").attr("src", "Images/Nav/resume.png");
+		$("#resume").attr("src", "img/Nav/resume.png");
 	});
 
 });
