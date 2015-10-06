@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>How Not to be a Data Bomb</title>
+
+		<meta name="description" content="A presentation of 7 steps outlining tips to work with data">
+		<meta name="author" content="Ashley Wu">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/style.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+				<section data-state="title-slide"> <!-- slide 1 (intro) -->
+					<p id="title">how <u>not</u> to be a <br><span>data bomb</span></p>
+					<br><br>
+					<p id="byline">by Ashley Wu | <a href="https://twitter.com/ashhwu">@ashhwu</a></p>
+				</section>
+
+				<section> <!-- slide 2 -->
+					<h2>data bomb?</h2>
+					<img src="img/me.jpg" class="fragment small-img">
+				</section>
+
+				<section> <!-- slide 3 -->
+					<img src="img/tweet.png" class="big-img">
+				</section>
+
+				<section> <!-- slide 4 -->
+					<ul id="list">
+						<li>impatient</li>
+						<li class="fragment">multitasker</li>
+						<li class="fragment">overwhelmed</li>
+						<li class="fragment">stressed</li>
+						<li class="fragment">only human!</li>
+					</ul>
+				</section>
+
+				<section> <!-- slide 5 -->
+					<img src="img/excel.png" class="big-img">
+				</section>
+
+				<section> <!-- slide 6 -->
+					<img src="img/sublime.png" class="big-img">
+				</section>
+
+				<section> <!-- slide 7 -->
+					<img src="img/numbers.gif" class="big-img">
+				</section>
+
+				<section> <!-- slide 8 -->
+					<img src="img/falling.gif" class="big-img">
+				</section>
+
+				<section> <!-- slide 9 -->
+					<a href="http://graphics.latimes.com/cheapest-pizza-near-me/" target="_blank"><img src="img/pizza.png" class="big-img"></a>
+					<br><br>
+					<a href="http://graphics.latimes.com/cheapest-pizza-near-me/" target="_blank">http://graphics.latimes.com/cheapest-pizza-near-me/</a>
+				</section>
+
+				<section> <!-- slide 10 -->
+					<h3>7 ways I learned <br>how <u>not</u> to be a data bomb.<br>Here we go!</h3>
+				</section>
+
+				<section data-background="#34A7AD"> <!-- slide 11 -->
+					<h3>#1:</h3>
+					<h2>Take notes.<br><em>Extensive</em> notes.</h2>
+					<h4 class="fragment">To-do lists, annotations on data, steps for cleaning</h4>
+				</section>
+
+				<section data-background="#34A7AD"> <!-- slide 11 -->
+					<h3>#2:</h3>
+					<h2>Spot check.<br>Constantly.</h2>
+					<h4 class="fragment">To assume makes...</h4>
+				</section>
+
+				<section data-background="#34A7AD"> <!-- slide 12 -->
+					<h3>#3:</h3>
+					<h2>Automate if possible.</h2>
+					<h4 class="fragment">Your human-ness can ruin everything.</h4>
+				</section>
+
+				<section data-background="#34A7AD"> <!-- slide 12 -->
+					<h3>#4:</h3>
+					<h2>Comment your code <em>and</em> your files.</h2>
+					<h4 class="fragment">Dates, descriptions, the whole shebang</h4>
+				</section>
+
+				<section data-background="#34A7AD"> <!-- slide 13 -->
+					<img src="img/files.png">
+				</section>
+
+				<section data-background="#34A7AD"> <!-- slide 14 -->
+					<h3>#5:</h3>
+					<h2 id="underlap">Refrain from randomly clicking around.</h2>
+					<img src="img/me.jpg" class="fragment" id="overlap">
+				</section>
+
+				<section data-background="#34A7AD"> <!-- slide 15 -->
+					<h3>#6:</h3>
+					<h2>Be patient.</h2>
+					<h4 class="fragment">Go slow as mud if you have to.<br> Keep your eye on the numbers.</h4>
+				</section>
+
+				<section data-background="#34A7AD"> <!-- slide 16 -->
+					<h3>#7:</h3>
+					<h2>Always question<br>your data.</h2>
+					<h4 class="fragment">And strive to answer  those questions.<br>Even/especially when you feel really confident about it.</h4>
+				</section>
+
+				<section> <!-- slide 17 -->
+					<h3>Thanks for listening!</h3>
+					<img src="img/dance.gif" id="end">
+					<a href="https://twitter.com/ashhwu" target="_blank"><h4>@ashhwu</h4></a>
+					<a href="mailto:ashleywu2016@u.northwestern.edu"><h4>ashleywu2016@u.northwestern.edu</h4></a>
+				</section>
+
+				
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
