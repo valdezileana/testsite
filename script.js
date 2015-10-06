@@ -43,6 +43,8 @@ $("#resume").mouseleave(function(){
 
 
 // Fancybox Functions
+
+// paintings
 $("#single_1").fancybox()
     .attr('rel', 'gallery')
     .fancybox({
@@ -67,6 +69,7 @@ $("#single_4").fancybox()
         padding : 0
     });
 
+// class projects
 $("#being-first").fancybox()
     .attr('rel', 'gallery')
     .fancybox({
