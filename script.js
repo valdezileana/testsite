@@ -2,43 +2,43 @@ $(document).ready(function(){
 
 //Turn nav Bar icons black when hovered over, temp solution (there may be a simpler way)
 $("#home").hover(function(){
-	$("#home").attr("src", "img/nav/home-hover.png");
+	$("#home").attr("src", "../img/nav/home-hover.png");
 });
 
 $("#home").mouseleave(function(){
-	$("#home").attr("src", "img/nav/home.png");
+	$("#home").attr("src", "../img/nav/home.png");
 });
 
 $("#work").hover(function(){
-	$("#work").attr("src", "img/nav/work-hover.png");
+	$("#work").attr("src", "../img/nav/work-hover.png");
 });
 
 $("#work").mouseleave(function(){
-	$("#work").attr("src", "img/nav/work.png");
+	$("#work").attr("src", "../img/nav/work.png");
 });
 
 $("#about").hover(function(){
-	$("#about").attr("src", "img/nav/about-hover.png");
+	$("#about").attr("src", "../img/nav/about-hover.png");
 });
 
 $("#about").mouseleave(function(){
-	$("#about").attr("src", "img/nav/about.png");
+	$("#about").attr("src", "../img/nav/about.png");
 });
 
 $("#contact").hover(function(){
-	$("#contact").attr("src", "img/nav/contact-hover.png");
+	$("#contact").attr("src", "../img/nav/contact-hover.png");
 });
 
 $("#contact").mouseleave(function(){
-	$("#contact").attr("src", "img/nav/contact.png");
+	$("#contact").attr("src", "../img/nav/contact.png");
 });
 
 $("#resume").hover(function(){
-	$("#resume").attr("src", "img/nav/resume-hover.png");
+	$("#resume").attr("src", "../img/nav/resume-hover.png");
 });
 
 $("#resume").mouseleave(function(){
-	$("#resume").attr("src", "img/nav/resume.png");
+	$("#resume").attr("src", "../img/nav/resume.png");
 });
 
 
