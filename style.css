@@ -201,6 +201,12 @@ h1 {
 
 /*Indiv Spoon pages*/
 
+.page-body {
+	width: 60%;
+	margin: 0 auto 0 auto;
+	padding-top: 40px;
+}
+
 .page {
 	float: left;
 	width: 77%;
