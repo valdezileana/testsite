@@ -111,27 +111,7 @@ h1 {
 	padding-left: 0;
 }
 
-/*Portfolio*/
-
-.page-head{
-	font-family:"Open Sans Condensed";
-	letter-spacing: 2px;
-	margin:0 auto;
-	display: none;
-}
-
-.page-head h1{
-	font-size:80px;
-	margin:0;
-}
-
-.icon-large{
-	height:80px;
-	float:left;
-	padding:15px 12px 0 0;
-}
-
-/*Design Nav*/
+/*work Nav*/
 
 #work-nav {
 	margin: 15px 0 30px 0;
@@ -151,34 +131,41 @@ h1 {
 	font-weight: bold;
 }
 
+/*work body*/
+
 .work-container {
 	padding-top: 20px;
 	min-height: 450px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .pub-container {
 	width: 100%;
-	min-height: 250px;
-	clear:both;
+	clear: both;
+	overflow: hidden;
+	margin-top: 30px;
 }
 
 .head {
 	font-family: "Carrois Gothic";
 	font-size: 13px;
-	letter-spacing: 1.5px;
+	letter-spacing: 1.2px;
 	padding-bottom: 7px;
+	color: #676767;
 }
 
 .three-column{
 	width: 30%;
 	float: left;
-	margin: 17px 13px 10px 10px;
-	min-height: 150px;
+	margin: 20px 13px 0 10px;
+	/*min-height: 140px;*/
+	border-bottom: 5px solid transparent;
+	display: block;
 }
 
 .three-column img {
-	padding-bottom: 5px;
+	padding-bottom: 3px;
 }
 
 .three-column:hover{
@@ -194,7 +181,7 @@ h1 {
 .pub {
 	font-family: "Source Sans Pro";
 	font-size: 15px;
-	background-color: #CCCACA;
+	background-color: #B3B3B3;
 	color: white;
 	padding: 2px 5px;
 	margin: 10px;
@@ -210,6 +197,38 @@ h1 {
 .info span {
 	font-weight: bold;
 	color: #333;
+}
+
+/*Indiv Spoon pages*/
+
+.page {
+	float: left;
+	width: 77%;
+	margin-right: 7%;
+}
+
+.print-page-full {
+	padding: 10px 0;
+	width: 100%;
+	/*box-shadow: 2px 0 3px #888888;*/
+}
+
+.page-nav {
+	margin-top: 40px;
+	padding-top: 40px;
+	border-top: 1px dotted #CCCACA;
+}
+
+.page-thumbnail {
+	width: 27%;
+	padding-bottom: 5px;
+	margin: 0 20px 20px 0;
+	border-bottom: 5px solid transparent;
+	display: inline-block;
+}
+
+.page-thumbnail:hover {
+	border-bottom: 5px solid #1aa8ad;
 }
 
 /*About Me*/
@@ -236,16 +255,7 @@ h1 {
 	color: #1aa8ad;
 }
 
-#copyright{
-	font-family: "Source Sans Pro";
-	color: #595959;
-	text-align: center;
-	padding: 30px 0;
-	clear: both;
-	font-size: 0.9em;
-}
-
-/*Sandbox*/
+/*fun*/
 
 #sandbox-container{
 	text-align:center;
@@ -268,14 +278,27 @@ h1 {
 	opacity: 0.7;
 }
 
+#copyright{
+	font-family: "Source Sans Pro";
+	color: #595959;
+	text-align: center;
+	padding: 30px 0;
+	clear: both;
+	font-size: 0.9em;
+}
+
+/*links*/
+
 a{
-	color:#939598;
-	text-decoration:none;
+	color: #939598;
+	text-decoration: none;
 }
 
 a:hover{
-	color:#1aa8ad;
+	color: #1aa8ad;
 }
+
+/*MEDIA QUERIES*/
 
 @media screen and (max-width: 1100px) {
 	#navBar{
@@ -400,10 +423,6 @@ a:hover{
 	}
 
 	/*work*/
-
-	.pub-container {
-		min-height: 250px;
-	}
 
 	.three-column {
 		width: 27%;
