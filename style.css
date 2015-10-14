@@ -340,6 +340,10 @@ a:hover{
 		width: 87%;
 	}
 
+	.page-body {
+		width: 70%;
+	}
+
 	li.section {
 		display: inline-block;
 	}
@@ -432,6 +436,12 @@ a:hover{
 
 	.three-column {
 		width: 27%;
+	}
+
+	/*indiv spoon pages*/
+
+	.page {
+		width: 100%;
 	}
 
 	/*about me*/
