@@ -8,85 +8,83 @@
 <!-- favicon -->
   <link href="../img/favicon-32x32.png" rel="shortcut icon" type="image/x-icon" />
 <!-- styles -->
-  <link rel="stylesheet" type="text/css" href="../style.css" />
-  <link rel="stylesheet" href="../fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../styles.css" />
 <!-- fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600|Carrois+Gothic|Open+Sans+Condensed:700|Roboto+Condensed:300' rel='stylesheet' type='text/css'>
-<!-- javascript -->
-  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="../script.js"></script>
-  <script type="text/javascript" src="../fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-</head>
+  <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600|Carrois+Gothic|Open+Sans+Condensed:700|Roboto+Condensed:300' rel='stylesheet' type='text/css'> -->
 
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+</head>
 <body>
-<!--  Main nav -->
-  <div id="navBar">
-    <ul>
-      <li class="section">
-        <a href="http://ashleywu.me/">
-          <h4>home</h4>
-          <img src="../img/nav/home.png" id="home" class="menu-icons">
-        </a>
-      </li>
-      <li class="section selected-nav">
-        <a href="http://ashleywu.me/work/">
-          <h4>work</h4>
-          <img src="../img/nav/work.png" id="work" class="menu-icons">
-        </a>
-      </li>
-      <li class="section">
-        <a href="http://ashleywu.me/about/">
-          <h4>about</h4>
-          <img src="../img/nav/about.png" id="about" class="menu-icons">
-        </a>
-      </li>
-      <li class="section">
-        <a href="../resume.pdf" target="_blank">
-          <h4>r&eacute;sum&eacute;</h4>
-          <img src="../img/nav/resume.png" id="resume" class="menu-icons">
-        </a>
-      </li>
-    </ul>
-  </div>
-<!-- End Main nav -->
 
 <!-- Body -->
-<div class="body-content">
 
-<!-- Work nav -->
-  <div id="work-nav">
-    <a href="http://ashleywu.me/work/"><p class="work-nav-item">work</p></a>
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="http://ashleywu.me/fun/"><p class="work-nav-item selected-nav">fun</p></a>
-  </div>
-
-<!-- Projects Body -->
-  <div id="work-container">
-    <div class="pub-container">
-      <div class="three-column">
-        <a href="https://vimeo.com/90443596" target="_blank"><img class="thumbnail" src="../img/fun/springbreak.jpg"></a>
-        <p class="info"><span>#springbreaksaga (video):</span> I took my friends on a 5-day tour of Northern California in March 2014.</p>
-      </div>
-    </div>
-    <div class="pub-container">
-      <div class="three-column">
-        <a title="Taz the Maltese" id="single_1" href="../img/fun/dog.jpg"><img class="thumbnail" src="../img/fun/dog-thumb.jpg" alt="" />
-      </div>
-      <div class="three-column">
-        <a title="Favorite Drinks" id="single_2" href="../img/fun/alc.jpg"><img class="thumbnail" src="../img/fun/alc-thumb.jpg" alt="" /><br>
-      </div>
-      <div class="three-column">
-        <a title="Caricature" id="single_3" href="../img/fun/kevin.jpg"><img class="thumbnail" src="../img/fun/kevin-thumb.jpg" alt="" /><br>
-      </div>
-      <div class="three-column">
-        <a title="Three Big Citeeth" id="single_4" href="../img/fun/lips.jpg"><img class="thumbnail" src="../img/fun/lips-thumb.jpg" alt="" /></a>
-        <p class="info"><span>Acrylics:</span> I like making paintings as presents for my friends.</p>
-      </div>
+  <div id="body-content">
+      
+    <div id="name-plate">
+      <img id="hero" src="../img/ash.gif">
     </div>
 
-  </div>
-       
+    <!--  Main Nav -->
+    <div id="navBar">
+      <ul>
+        <li class="section">
+          <a href="http://ashleywu.me/">
+            <p class="label">work</p>
+          </a>
+        </li>
+        <li class="section selected-nav">
+          <!-- <a href="http://ashleywu.me/fun/"> -->
+            <!-- <img src="img/nav/work.png" id="work" class="menu-icons"> -->
+            <p class="label">fun</p>
+          <!-- </a> -->
+        </li>
+        <li class="section">
+          <!-- <a href="http://ashleywu.me/about/"> -->
+            <!-- <img src="img/nav/about.png" id="about" class="menu-icons"> -->
+            <p class="label">about</p> 
+          <!-- </a> -->
+        </li>
+        <li class="section">
+          <a href="resume.pdf" target="_blank">
+            <!-- <img src="img/nav/resume.png" id="resume" class="menu-icons"> -->
+            <p class="label">résumé</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  <!-- End Main nav -->
+
+    <!-- Work container -->
+    <div class="work-container">
+      <div class="row">
+        <div class="col-md-4">
+          <a href="https://vimeo.com/152117566" target="_blank"><img src="../img/fun/ba-vid.png" class="thumb"></a>
+        </div>
+        <div class="col-md-4">
+          <!-- <a href="http://www.lanacion.com.ar/1880829-los-100-dias-de-macri-que-palabras-marcaron-sus-43-discursos" target="_blank"> -->
+          <img src="../img/fun/dog.png" class="thumb">
+        <!-- </a> -->
+        </div>
+        <div class="col-md-4">
+          <img src="../img/fun/alc.png" class="thumb">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <a href="https://vimeo.com/90443596" target="_blank"><img src="../img/fun/springbreak.png" class="thumb"></a>
+        </div>
+        <div class="col-md-4"> <!-- oscar -->
+          <img src="../img/fun/lips.png" class="thumb">
+        </div>
+      </div>
+      
+
+    </div> <!-- end work container -->
+
+  </div> <!-- end body content -->
+
   <div class="social">
     <ul>
       <li><a href="mailto:ashh.wu@gmail.com" target="_blank"><span class="fontawesome-envelope-alt social"></span></a></li>
@@ -94,11 +92,17 @@
       <li><a href="http://linkd.in/1rU4Az8" target="_blank"><span class="fontawesome-linkedin social"></span></a></li>
       <li><a href="https://github.com/ashwu" target="_blank"><span class="fontawesome-github-alt social"></span></a> </li>
     </ul> 
-    </div>
+  </div>
 
   <footer>
-    <p id="copyright"> &copy; 2016 ASHLEY WU</p>
+    <p id="copyright"> ASHLEY WU &copy; 2016 </p>
   <footer>
+
+  <!-- javascript -->
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 </body>
 

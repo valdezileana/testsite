@@ -8,69 +8,358 @@
 <!-- favicon -->
   <link href="img/favicon-32x32.png" rel="shortcut icon" type="image/x-icon" />
 <!-- styles -->
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 <!-- fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600|Carrois+Gothic|Open+Sans+Condensed:700|Roboto+Condensed:300' rel='stylesheet' type='text/css'>
-<!-- javascript -->
-  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
-  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<!--  Main Nav -->
+
+<!-- Body -->
+
+  <!-- <div id="body-content"> -->
+
+    <div id="name-plate">
+      <img id="hero" src="img/ash.gif">
+    </div>
+
+    <!--  Main Nav -->
     <div id="navBar">
       <ul>
-        <li class="section selected-nav">
-          <a href="http://ashleywu.me/">
-            <h4>home</h4>
-            <img src="img/nav/home.png" id="home" class="menu-icons">
-          </a>
+        <li id="work" class="section selected-nav">
+            <!-- <img src="img/nav/work.png" id="work" class="menu-icons"> -->
+            <p class="nav-item">work</p>
         </li>
-        <li class="section">
-          <a href="http://ashleywu.me/work/">
-            <h4>work</h4>
-            <img src="img/nav/work.png" id="work" class="menu-icons">
-          </a>
+        <li id="fun" class="section">
+            <!-- <img src="img/nav/work.png" id="work" class="menu-icons"> -->
+            <p class="nav-item">fun</p>
         </li>
-        <li class="section">
-          <a href="http://ashleywu.me/about/">
-            <h4>about</h4>
-            <img src="img/nav/about.png" id="about" class="menu-icons">
-          </a>
+        <li id="about" class="section">
+            <!-- <img src="img/nav/about.png" id="about" class="menu-icons"> -->
+            <p class="nav-item">about</p> 
         </li>
         <li class="section">
           <a href="resume.pdf" target="_blank">
-            <h4>r&eacute;sum&eacute;</h4>
-            <img src="img/nav/resume.png" id="resume" class="menu-icons">
+            <!-- <img src="img/nav/resume.png" id="resume" class="menu-icons"> -->
+            <p class="nav-item">résumé</p>
           </a>
         </li>
       </ul>
     </div>
-<!-- End Main nav -->
+    <!-- End Main nav -->
 
-<!-- Body -->
+    <!-- Work container -->
+    <div class="work-container">
+      <div id="work-section">
+      
+        <div class="row">
+          <div class="col-xs-4">
+            <a href="http://www.lanacion.com.ar/1872188-premios-oscar-2016-arma-tu-pronostico" target="_blank">
+              <figure class="effect-zoe">
+                <img src="img/projects/presidentes.png" class="thumb">
+                <figcaption>
+                  <p class="headline"><span class="pub">LA NACION</span><br><br>US Presidents in Argentina<br><span class="subhead">("Las visitas de los presidentes estadounidenses a la Argentina")</span></p>
+                </figcaption>     
+              </figure>
+            </a>
+          </div>
 
-<div id="body-content">
-    
-  <div id="name-plate">
-    <h1>ASHLEY WU</h1>
-    <p id="visual"><b>VISUAL JOURNALIST</b></p>
+          <div class="col-xs-4">
+            <a href="http://www.lanacion.com.ar/1872188-premios-oscar-2016-arma-tu-pronostico" target="_blank">
+              <figure class="effect-zoe">
+                <img src="img/projects/discursos.png" class="thumb">
+                <figcaption>
+                   <p class="headline"><span class="pub">LA NACION</span><br><br>Presidential Speech Analysis<br><span class="subhead">("Los 100 días de Macrí: qué palabras marcaron sus 43 discursos")</span></p>
+                </figcaption>     
+              </figure>
+            </a>
+          </div>
+
+          <div class="col-xs-4">
+            <a href="http://www.lanacion.com.ar/1872188-premios-oscar-2016-arma-tu-pronostico" target="_blank">
+              <figure class="effect-zoe">
+                <img src="img/projects/oscars.png" class="thumb">
+                <figcaption>
+                  <p class="headline"><span class="pub">LA NACION</span><br><br>The Oscar ballot<br><span class="subhead">("Armá tu prognostico")</span></p>
+                </figcaption>     
+              </figure>
+            </a>
+          </div>
+        </div> <!-- end first row -->
+
+
+        <div class="row">
+          <div class="col-xs-4">
+            <a href="http://www.lanacion.com.ar/1868328-aumento-luz-calculadora-tarifa" target="_blank">
+              <figure class="effect-zoe">
+                <img src="img/projects/calculadora.png" class="thumb">
+                <figcaption>
+                  <p class="headline"><span class="pub">LA NACION</span><br><br>How much will you pay for energy?<br><span class="subhead">("Aumento de luz: calculá la tarifa de tu boleta")</span></p>
+                </figcaption>     
+              </figure>
+            </a>
+          </div>
+
+          <div class="col-xs-4">
+            <a href="http://graphics.latimes.com/cheapest-pizza-near-me/" target="_blank">
+              <figure class="effect-zoe">
+                <img src="img/projects/pizza.png" class="thumb">
+                <figcaption>
+                  <p class="headline"><span class="pub">LOS ANGELES TIMES</span><br><br>Where is the cheapest pizza near you?</p>
+                </figcaption>     
+              </figure>
+            </a>
+          </div>
+
+          <div class="col-xs-4">
+            <a href="http://www.latimes.com/visuals/graphics/la-me-g-census-latinos-20150708-htmlstory.html" target="_blank">
+              <figure class="effect-zoe">
+                <img src="img/projects/latinos.png" class="thumb">
+                <figcaption>
+                  <p class="headline"><span class="pub">LOS ANGELES TIMES</span><br><br>Rise of Latino population in California counties</p>
+                </figcaption>     
+              </figure>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-xs-4">
+            <a href="http://www.latimes.com/local/california/la-me-california-commute-20150707-story.html" target="_blank">
+              <figure class="effect-zoe">
+                <img src="img/projects/bike.png" class="thumb">
+                <figcaption>
+                  <p class="headline"><span class="pub">LOS ANGELES TIMES</span><br><br>Bike-sharing as a bridge between commute gaps</p>
+                </figcaption>     
+              </figure>
+            </a>
+          </div>
+
+          <div class="col-xs-4">
+            <a href="lat-june30.pdf">
+              <figure class="effect-zoe">
+                <img src="img/projects/kern.png" class="thumb">
+                <figcaption>
+                  <p class="headline"><span class="pub">LOS ANGELES TIMES</span><br><br>California drought: Their rapids response</p>
+                </figcaption>     
+              </figure>
+            </a>
+          </div>
+
+          <div class="col-xs-4">
+            <a href="lat-june25.pdf">
+              <figure class="effect-zoe">
+                <img src="img/projects/drought.png" class="thumb">
+                <figcaption>
+                  <p class="headline"><span class="pub">LOS ANGELES TIMES</span><br><br>California drought: Who has made the grade?</p>
+                </figcaption>     
+              </figure>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-4">
+            <a href="http://apps.northbynorthwestern.com/rock/">
+              <figure class="effect-zoe">
+                <img src="img/projects/rock.png" class="thumb">
+                <figcaption>
+                  <p class="headline"><span class="pub">NORTH BY NORTHWESTERN</span><br><br>The many faces of the rock</p>
+                </figcaption>     
+              </figure>
+            </a>
+          </div>
+          <div class="col-xs-4">
+            <a href="http://apps.northbynorthwestern.com/magazine/2015/spring/finding-solace/">
+              <figure class="effect-zoe">
+                <img src="img/projects/solace.png" class="thumb">
+                <figcaption>
+                  <p class="headline"><span class="pub">NORTH BY NORTHWESTERN</span><br><br>Finding Solace</p>
+                </figcaption>     
+              </figure>
+            </a>
+          </div>
+          <div class="col-xs-4">
+            <a href="http://www.northbynorthwestern.com/story/hinman-residents-turn-dorm-room-into-a-ball-pit/">
+              <figure class="effect-zoe">
+                <img src="img/projects/ballpit.png" class="thumb">
+                <figcaption>
+                  <p class="headline"><span class="pub">NORTH BY NORTHWESTERN</span><br><br>VIDEO: Dorm room ball pit</p>
+                </figcaption>     
+              </figure>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-4"> 
+            <img src="img/print/summerparty-lettering.png" class="thumb">
+          </div>
+          <div class="col-xs-4"> 
+            <img src="img/print/tea-thumb.png" class="thumb">
+          </div>
+          <div class="col-xs-4"> 
+            <img src="img/print/spice-thumb.png" class="thumb">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-4"> 
+            <img src="img/print/bbq-thumb.png" class="thumb">
+          </div>
+          <div class="col-xs-4">
+            <a href="http://nicolezhu.io/socialite/">
+              <figure class="effect-zoe">
+                <img src="img/projects/socialite.png" class="thumb">
+                <figcaption>
+                  <p class="headline"><span class="pub">KNIGHT LAB</span><br><br>Socialite (beta): Article analysis by tweets</p>
+                </figcaption>     
+              </figure>
+            </a>
+          </div>
+          <div class="col-xs-4">
+            <a href="https://romaine.herokuapp.com/">
+              <figure class="effect-zoe">
+                <img src="img/projects/romaine.png" class="thumb">
+                <figcaption>
+                  <p class="headline"><span class="pub">KNIGHT LAB</span><br><br>Romaine: A new way to choose courses</p>
+                </figcaption>     
+              </figure>
+            </a>
+          </div>
+        </div> <!-- end row -->
+
+        <div class="row">
+          <div class="col-xs-4">
+            <a href="https://romaine.herokuapp.com/">
+              <figure class="effect-zoe">
+                <img src="img/projects/between-lines.png" class="thumb">
+                <figcaption>
+                  <p class="headline"><span class="pub">CLASS PROJECT</span><br><br>Between the lines</p>
+                </figcaption>     
+              </figure>
+            </a>
+          </div>
+
+        </div>
+
+      </div> <!-- end "WORK" section -->
+
+      <!-- FUN -->
+      <div id="fun-section">
+
+        <div class="row">
+
+          <div class="col-xs-4">
+            <a href="https://vimeo.com/152117566" target="_blank">
+              <figure class="effect-zoe">
+                <img src="img/fun/ba-vid.png" class="thumb">
+                <figcaption>
+                  <p class="headline">VIDEO LOG: <span class="subhead">Buenos Aires (January 17-23, 2016)</span></p>
+                </figcaption>     
+              </figure>
+            </a>
+          </div>
+
+          <div class="col-xs-4">
+            <!-- <a href="https://vimeo.com/152117566" target="_blank"> -->
+              <figure class="effect-zoe">
+                <img src="img/fun/dog.png" class="thumb">
+                <figcaption>
+                  <p class="headline">PAINTING:<span class="subhead"> Acrylic on canvas</span></p>
+                </figcaption>     
+              </figure>
+            <!-- </a> -->
+          </div>
+
+          <div class="col-xs-4">
+            <!-- <a href="https://vimeo.com/152117566" target="_blank"> -->
+              <figure class="effect-zoe">
+                <img src="img/fun/alc.png" class="thumb">
+                <figcaption>
+                  <p class="headline">PAINTING: <span class="subhead">Acrylic on canvas</span></p>
+                </figcaption>     
+              </figure>
+            <!-- </a> -->
+          </div>
+      
+        </div>
+
+        <div class="row">
+
+          <div class="col-xs-4">
+            <a href="https://vimeo.com/121626080" target="_blank">
+              <figure class="effect-zoe">
+                <img src="img/fun/spoon-promo-vid.png" class="thumb">
+                <figcaption>
+                  <p class="headline">VIDEO PROMO:<span class="subhead"> Teaser for SPOON print magazine winter 2015</span></p>
+                </figcaption>     
+              </figure>
+            </a>
+          </div>
+
+          <div class="col-xs-4">
+            <a href="https://vimeo.com/90443596" target="_blank">
+              <figure class="effect-zoe">
+                <img src="img/fun/springbreak.png" class="thumb">
+                <figcaption>
+                  <p class="headline">VIDEO LOG:<span class="subhead"> Spring break 2014 #springbreaksaga</span></p>
+                </figcaption>     
+              </figure>
+            </a>
+          </div>
+
+          <div class="col-xs-4">
+            <!-- <a href="https://vimeo.com/152117566" target="_blank"> -->
+              <figure class="effect-zoe">
+                <img src="img/fun/lips.png" class="thumb">
+                <figcaption>
+                  <p class="headline">PAINTING:<span class="subhead"> Acrylic on canvas</span></p>
+                </figcaption>     
+              </figure>
+            <!-- </a> -->
+          </div>
+
+        </div>
+      </div> <!-- end "FUN" section -->
+
+      <!-- ABOUT SECTION -->
+      <div id="about-section">
+        <img src="img/ash.png" id="headshot">
+        <p id="bio">
+          <span>Hi I'm Ashley!</span><br>
+          (Ashwu if you're into nicknames)
+          <br><br>
+          I'm a recent graduated of Northwestern University with a journalism major and a Spanish minor. I currently do design and development as a <a href="http://knightlab.northwestern.edu/">Knight Lab</a> student fellow. Some other gigs have been with the <a href="https://twitter.com/LATimesGraphics">Los Angeles Times graphics team</a> and the <a href="https://twitter.com/LNdata">LA NACION data team</a> in Buenos Aires.
+          <br><br>
+          I enjoy watching Food Network, wearing fun socks, speaking Spanglish (but also regular Spanish), sharing entrees at restaurants and listening to <a href="https://www.youtube.com/watch?v=b8-tXG8KrWs" target="_blank">this song</a> to get me through some especially rough Mondays.
+        </p>
+      </div> <!-- end "ABOUT" section -->
+
+
+    </div> <!-- end work container -->
+  <!-- </div> end body content -->
+
+  <div class="social">
+    <ul>
+      <li><a href="mailto:ashh.wu@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></li>
+      <li><a href="https://twitter.com/ashhwu" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+      <li><a href="http://linkd.in/1rU4Az8" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+      <li><a href="https://github.com/ashwu" target="_blank"><i class="fa fa-github fa-2x"></i></a> </li>
+    </ul> 
   </div>
 
-  </div>
-    <div class="social">
-      <ul>
-        <li><a href="mailto:ashh.wu@gmail.com" target="_blank"><span class="fontawesome-envelope-alt social"></span></a></li>
-        <li><a href="https://twitter.com/ashhwu" target="_blank"><span class="fontawesome-twitter social"></span></a></li>
-        <li><a href="http://linkd.in/1rU4Az8" target="_blank"><span class="fontawesome-linkedin social"></span></a></li>
-        <li><a href="https://github.com/ashwu" target="_blank"><span class="fontawesome-github-alt social"></span></a> </li>
-      </ul> 
-    </div>
+  <footer>
+    <p id="copyright"> ASHLEY WU &copy; 2016 </p>
+  <footer>
 
-  <footer>
-    <p id="copyright"> &copy; 2016 ASHLEY WU</p>
-  <footer>
+  <!-- javascript -->
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 </body>
 

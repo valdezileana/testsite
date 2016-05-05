@@ -1,0 +1,379 @@
+body {
+	margin: 0;
+}
+
+/* -------- BODY ----------*/
+.body-content {
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+/* -------- HERO IMAGE ----------*/
+#name-plate {
+	margin: 100px 0 50px 0;
+	text-align: center;
+}
+
+#hero {
+	width: 35%;
+}
+
+/* -------- NAVIGATION ----------*/
+#navBar {
+	font-family: 'Open Sans','Helvetica',sans-serif;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	text-align: center;
+}
+
+#navBar ul {
+	padding-left: 0;
+}
+
+li.section {
+	margin: 0 4%;
+	padding-bottom: 5px;
+	display: inline-block;
+}
+
+li.selected-nav {
+	border-bottom: 4px solid #000;
+	/*#5dadc4*/
+}
+
+.nav-item {
+	margin: 0;
+	color: #adadad;
+	letter-spacing: .08em;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#work .nav-item {
+	color: #000;
+}
+
+li.section:hover {
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* -------- WORK CONTAINER ----------*/
+
+.work-container {
+	margin: 75px auto 0 auto;
+	width: 85%;
+	overflow: hidden;
+}
+
+.col-xs-4 {
+	position: relative;
+}
+
+.thumb {
+	width: 100%;
+}
+
+.row {
+	margin-bottom: 20px;
+}
+
+
+#fun-section {
+	display: none;
+}
+
+/*--------- ZOE EFFECT (adapted from http://tympanus.net/Development/HoverEffectIdeas/index.html) --------------*/
+
+figcaption {
+	padding: 0.5em;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+.effect-zoe:hover figcaption {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.pub {
+	padding: 3px 6px;
+	background-color: #2b2b2b;
+	color: #fff;
+	font-weight: normal;
+}
+
+.headline {
+	font-family: 'Open Sans','Helvetica',sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 1.6em;
+	margin: 0;
+	padding: 20px;
+	color: #000;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+	-webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
+}
+
+span.subhead {
+	font-weight: normal;
+}
+
+.effect-zoe:hover p.headline {
+	opacity: 1;
+}
+
+.thumb:hover {
+	opacity: 0.15;
+	transition: 0.25s;
+
+}
+
+.effect-zoe:hover .thumb {
+	opacity: 0.15;
+	transition: 0.2s;
+	border: 4px solid black;
+}
+
+/* -------- ABOUT ME ----------*/
+#about-section {
+	width: 65%;
+	margin: 0 auto;
+	display: none;
+}
+
+#headshot{
+	width: 50%;
+	float: left;
+}
+
+#bio {
+	font-family: 'Open Sans','Helvetica',sans-serif;
+	font-size: 13.5px;
+	width: 42%;
+	float: right;
+}
+
+#bio span {
+	font-weight: bold;
+	font-size: 1.15em;
+	color: #000;
+}
+
+#bio a {
+	color: #4a8a9c;
+}
+
+#bio a:hover {
+	text-decoration: underline;
+}
+
+
+/*------- SOCIAL ICONS ----------*/
+
+
+.social {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    clear: both;
+}
+
+.social ul {
+	text-align: center;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.social ul li {
+	display: inline;
+	margin: 0 15px;
+	padding-left: 0;
+}
+
+.fa {
+	color: #adadad;
+	font-size: 15px;
+}
+
+.fa:hover {
+	color: #000;
+	transition: 0.2s;
+}
+
+#copyright{
+	font-family: 'Open Sans','Helvetica',sans-serif;
+	font-size: 0.9em;
+	font-weight: 300;
+	color: #adadad;
+	text-align: center;
+	padding: 30px 0;
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+/*----- SPOON PAGES --------*/
+.page-body {
+	width: 60%;
+	margin: 0 auto 0 auto;
+	padding-top: 40px;
+}
+
+.page {
+	float: left;
+	width: 77%;
+	margin-right: 7%;
+}
+
+.print-page-full {
+	padding: 10px 0;
+	width: 100%;
+	/*box-shadow: 2px 0 3px #888888;*/
+}
+
+.page-nav {
+	margin-top: 40px;
+	padding-top: 40px;
+	border-top: 1px dotted #CCCACA;
+}
+
+.page-thumbnail {
+	width: 27%;
+	padding-bottom: 5px;
+	margin: 0 20px 20px 0;
+	border-bottom: 5px solid transparent;
+	display: inline-block;
+}
+
+.page-thumbnail:hover {
+	border-bottom: 5px solid #1aa8ad;
+}
+
+
+
+
+
+
+/* ---------- MEDIA QUERIES ----------------*/
+
+@media screen and (max-width: 1100px) {
+	#about-section {
+		width: 75%;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	#hero {
+		width: 45%;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	#about-section {
+		width: 90%;
+	}
+
+	#bio {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.work-container {
+		margin-top: 50px;
+	}
+
+	#work-section, #fun-section {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.col-xs-4 {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	#about-section {
+		width: 97%;
+	}
+
+}
+
+
+@media screen and (max-width: 600px) {
+	#work-section, #fun-section {
+		width: 90%;
+	}
+
+	#name-plate {
+		margin-top: 70px;
+	}
+
+}
+
+@media screen and (max-width: 560px) {
+	#hero {
+		width: 56%;
+	}
+
+	#navBar {
+		width: 80%;
+    	margin: 0 auto;
+	}
+	
+	#headshot{
+		width: 75%;
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+
+	#bio {
+		width: 75%;
+		float: none;
+		font-size: 13.5px;
+		margin: 20px auto 0 auto;
+	}
+
+}
+
+@media screen and (max-width: 390px) {
+
+	.nav-item {
+		font-size: 12px;
+	}
+
+}
+
+@media screen and (max-width: 340px) {
+
+	#navBar {
+		width: 90%;
+	}
+
+	li.section {
+		margin: 0 2.5%;
+	}
+
+	#copyright{
+		font-size: 0.65em;
+	}
+
+
+}
+
+
