@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    // MUST REFACTOR THIS
+
     $('#work').on('click', function(){
         $('.nav-item').css('color', '#adadad');
         $('#fun-section').css('display','none');
@@ -36,23 +38,33 @@ $(document).ready(function(){
         $('.nav-item', this).css('color', '#000');
     });
 
-    // if ($(window).width() < 995) {
-    //     $('.col-xs-4').addClass('col-xs-6').removeClass('col-xs-4');
-    // }
+    // ------- FANCYBOX ------------ //
 
-    // if ($(window).width() < 750) {
-    //     $('.col-xs-6').addClass('col-xs-4').removeClass('col-xs-6');
-    // }
+    // paintings
+    $("#taz").fancybox()
+        .attr('rel', 'gallery')
+        .fancybox({
+            padding : 0
+        });
 
-    // $(window).resize(function() {
-    //     if ($(window).width() < 995) {
-    //         $('.col-xs-4').addClass('col-xs-6').removeClass('col-xs-4');
-    //     } else if ($(window).width() < 750) {
-    //         $('.col-xs-6').addClass('col-xs-4').removeClass('col-xs-6');
-    //     } else {
-    //         $('.col-xs-4').addClass('col-xs-4').removeClass('col-xs-6');
-    //     }
-    // });
+    $("#drinks").fancybox()
+        .attr('rel', 'gallery')
+        .fancybox({
+            padding : 0
+        });
 
+    $("#lips").fancybox()
+        .attr('rel', 'gallery')
+        .fancybox({
+            padding : 0
+        });
+
+    $("#kevin").fancybox()
+        .attr('rel', 'gallery')
+        .fancybox({
+            padding : 0
+        });
+
+    
 });
 
