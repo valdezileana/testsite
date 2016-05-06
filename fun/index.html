@@ -10,17 +10,17 @@
 <!-- styles -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="../styles.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 <!-- fonts -->
-  <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600|Carrois+Gothic|Open+Sans+Condensed:700|Roboto+Condensed:300' rel='stylesheet' type='text/css'> -->
-
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 <!-- Body -->
 
-  <div id="body-content">
-      
+  <!-- <div id="body-content"> -->
+
     <div id="name-plate">
       <img id="hero" src="../img/ash.gif">
     </div>
@@ -28,69 +28,154 @@
     <!--  Main Nav -->
     <div id="navBar">
       <ul>
-        <li class="section">
-          <a href="http://ashleywu.me/">
-            <p class="label">work</p>
-          </a>
+        <li id="work" class="section">
+            <p class="nav-item" style="color:#adadad;">work</p>
         </li>
-        <li class="section selected-nav">
-          <!-- <a href="http://ashleywu.me/fun/"> -->
-            <!-- <img src="img/nav/work.png" id="work" class="menu-icons"> -->
-            <p class="label">fun</p>
-          <!-- </a> -->
+        <li id="fun" class="section selected-nav">
+            <p class="nav-item" style="color:#000;">fun</p>
         </li>
-        <li class="section">
-          <!-- <a href="http://ashleywu.me/about/"> -->
+        <li id="about" class="section">
             <!-- <img src="img/nav/about.png" id="about" class="menu-icons"> -->
-            <p class="label">about</p> 
-          <!-- </a> -->
+            <p class="nav-item">about</p> 
         </li>
         <li class="section">
-          <a href="resume.pdf" target="_blank">
+          <a href="wu-resume.pdf" target="_blank">
             <!-- <img src="img/nav/resume.png" id="resume" class="menu-icons"> -->
-            <p class="label">résumé</p>
+            <p class="nav-item">résumé</p>
           </a>
         </li>
       </ul>
     </div>
-  <!-- End Main nav -->
+    <!-- End Main nav -->
 
     <!-- Work container -->
     <div class="work-container">
-      <div class="row">
-        <div class="col-md-4">
-          <a href="https://vimeo.com/152117566" target="_blank"><img src="../img/fun/ba-vid.png" class="thumb"></a>
-        </div>
-        <div class="col-md-4">
-          <!-- <a href="http://www.lanacion.com.ar/1880829-los-100-dias-de-macri-que-palabras-marcaron-sus-43-discursos" target="_blank"> -->
-          <img src="../img/fun/dog.png" class="thumb">
-        <!-- </a> -->
-        </div>
-        <div class="col-md-4">
-          <img src="../img/fun/alc.png" class="thumb">
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-4">
-          <a href="https://vimeo.com/90443596" target="_blank"><img src="../img/fun/springbreak.png" class="thumb"></a>
+      <!-- FUN -->
+      <div id="fun-section" style="display:block">
+
+        <div class="row">
+
+          <div class="col-xs-4">
+            <a href="https://vimeo.com/152117566" target="_blank">
+              <figure class="effect-zoe">
+                <img src="../img/fun/ba-vid.png" class="thumb">
+                <figcaption>
+                  <p class="headline">VIDEO LOG: <span class="subhead">Buenos Aires (January 17-23, 2016)</span></p>
+                </figcaption>     
+              </figure>
+            </a>
+            <div class="mobile-caption">
+                <!-- <span class="pub">CLASS PROJECT</span> -->
+                <p class="info">VIDEO LOG: Buenos Aires (January 17-23, 2016)</p>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <a title="Taz the Maltese" id="taz" href="img/fun/dog.jpg">
+              <figure class="effect-zoe">
+                <img src="../img/fun/dog.png" class="thumb">
+                <figcaption>
+                  <p class="headline">ACRYLIC ON CANVAS:<span class="subhead"> Taz the Maltese</span></p>
+                </figcaption>     
+              </figure>
+            </a>
+            <div class="mobile-caption">
+              <p class="info">ACRYLIC ON CANVAS: Taz the Maltese</p>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <a title="Favorite drinks" id="drinks" href="img/fun/alc.jpg">
+              <figure class="effect-zoe">
+                <img src="../img/fun/alc.png" class="thumb">
+                <figcaption>
+                  <p class="headline">ACRYLIC ON CANVAS:<span class="subhead"> Favorite drinks</span></p>
+                </figcaption>     
+              </figure>
+            </a>
+            <div class="mobile-caption">
+              <p class="info">ACRYLIC ON CANVAS: Favorite drinks</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4"> <!-- oscar -->
-          <img src="../img/fun/lips.png" class="thumb">
+
+        <div class="row">
+
+          <div class="col-xs-4">
+            <a href="https://vimeo.com/121626080" target="_blank">
+              <figure class="effect-zoe">
+                <img src="../img/fun/spoon-promo-vid.png" class="thumb">
+                <figcaption>
+                  <p class="headline">VIDEO PROMO:<span class="subhead"> Teaser for SPOON print magazine winter 2015</span></p>
+                </figcaption>     
+              </figure>
+            </a>
+            <div class="mobile-caption">
+              <p class="info">VIDEO PROMO: Teaser for SPOON print magazine winter 2015</p>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <a href="https://vimeo.com/90443596" target="_blank">
+              <figure class="effect-zoe">
+                <img src="../img/fun/springbreak.png" class="thumb">
+                <figcaption>
+                  <p class="headline">VIDEO LOG:<span class="subhead"> Spring break 2014 #springbreaksaga</span></p>
+                </figcaption>     
+              </figure>
+            </a>
+            <div class="mobile-caption">
+              <p class="info">VIDEO LOG: Spring break in northern California 2014 #springbreaksaga</p>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <a title="Three Big Ci-teeth" id="lips" href="img/fun/lips.jpg">
+              <figure class="effect-zoe">
+                <img src="../img/fun/lips.png" class="thumb">
+                <figcaption>
+                  <p class="headline">ACRYLIC ON CANVAS:<span class="subhead"> Three Big Ci-teeth</span></p>
+                </figcaption>     
+              </figure>
+            </a>
+            <div class="mobile-caption">
+              <p class="info">ACRYLIC ON CANVAS: Three Big Ci-teeth</p>
+            </div>
+          </div>
+
         </div>
-      </div>
-      
+
+        <div class="row">
+
+          <div class="col-xs-4">
+            <a title="Caricature: Kevin Tsukii" id="lips" href="img/fun/kevin.jpg">
+              <figure class="effect-zoe">
+                <img src="../img/fun/kevin.png" class="thumb">
+                <figcaption>
+                  <p class="headline">ACRYLIC ON CANVAS:<span class="subhead"> Caricature of Kevin Tsukii</span></p>
+                </figcaption>     
+              </figure>
+            </a>
+            <div class="mobile-caption">
+              <p class="info">ACRYLIC ON CANVAS: Caricature of Kevin Tsukii</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div> <!-- end "FUN" section -->
+
 
     </div> <!-- end work container -->
-
-  </div> <!-- end body content -->
+  <!-- </div> end body content -->
 
   <div class="social">
     <ul>
-      <li><a href="mailto:ashh.wu@gmail.com" target="_blank"><span class="fontawesome-envelope-alt social"></span></a></li>
-      <li><a href="https://twitter.com/ashhwu" target="_blank"><span class="fontawesome-twitter social"></span></a></li>
-      <li><a href="http://linkd.in/1rU4Az8" target="_blank"><span class="fontawesome-linkedin social"></span></a></li>
-      <li><a href="https://github.com/ashwu" target="_blank"><span class="fontawesome-github-alt social"></span></a> </li>
+      <li><a href="mailto:ashh.wu@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></li>
+      <li><a href="https://twitter.com/ashhwu" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+      <li><a href="http://linkd.in/1rU4Az8" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+      <li><a href="https://github.com/ashwu" target="_blank"><i class="fa fa-github fa-2x"></i></a> </li>
     </ul> 
   </div>
 
@@ -101,8 +186,8 @@
   <!-- javascript -->
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
-  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <script type="text/javascript" src="../script.js"></script>
+  <script type="text/javascript" src="../fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 </body>
 
