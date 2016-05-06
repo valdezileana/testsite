@@ -40,11 +40,6 @@ $(document).ready(function(){
 
     // ------- FANCYBOX ------------ //
 
-    // $("#kern").fancybox()
-    //     .attr('rel', 'gallery')
-    //     .fancybox({
-    //         padding : 0
-    // });
 
     // paintings
     $("#taz").fancybox()
