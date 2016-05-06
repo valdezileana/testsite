@@ -195,7 +195,7 @@ span.subhead {
 
 
 .social {
-    padding-top: 120px;
+    padding-top: 100px;
     padding-bottom: 50px;
     clear: both;
 }
@@ -350,6 +350,10 @@ span.subhead {
 	#about-section {
 		width: 97%;
 	}
+
+	.social {
+	    padding-top: 50px;
+	}
 }
 
 
@@ -386,6 +390,10 @@ span.subhead {
 		float: none;
 		font-size: 13.5px;
 		margin: 20px auto 0 auto;
+	}
+
+	.info {
+		font-size: 12px;
 	}
 
 }
