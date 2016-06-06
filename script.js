@@ -66,6 +66,12 @@ $(document).ready(function(){
             padding : 0
         });
 
+    $("#summer-party").fancybox()
+        .attr('rel', 'gallery')
+        .fancybox({
+            padding : 0
+        });
+
 
 
     
