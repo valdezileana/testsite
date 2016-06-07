@@ -114,6 +114,7 @@ a:hover {
 	position: absolute;
 	bottom: 20px;
 	left: 21px;
+	text-transform: uppercase;
 }
 
 /*.col-xs-4:hover .company {
@@ -149,6 +150,7 @@ figcaption {
 	color: #fff;
 	font-weight: normal;
 	border-radius: 3px;
+	text-transform: uppercase;
 }
 
 .headline {
