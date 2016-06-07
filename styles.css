@@ -73,14 +73,16 @@ a:hover {
 
 /* -------- WORK CONTAINER ----------*/
 
-.work-container {
+#main-container {
 	margin: 75px auto 0 auto;
-	width: 85%;
+	width: 90%;
 	overflow: hidden;
 }
 
 .col-xs-4 {
 	position: relative;
+	/*margin-top: 15px;*/
+	margin-bottom: 10px;
 }
 
 .thumb {
@@ -91,12 +93,6 @@ a:hover {
 	margin-bottom: 20px;
 }
 
-/*img.company {
-	width: 10%;
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
-}*/
 
 #fun-section {
 	display: none;
@@ -117,11 +113,6 @@ a:hover {
 	text-transform: uppercase;
 }
 
-/*.col-xs-4:hover .company {
-	opacity: 0;
-	transition: 0.2s;
-}
-*/
 .col-xs-4:hover span.ribbon {
 	opacity: 0;
 	transition: 0.1s;
@@ -184,7 +175,7 @@ span.subhead {
 .effect-zoe:hover .thumb {
 	opacity: 0.15;
 	transition: 0.2s;
-	border: 3px solid black;
+	outline: 3px solid #000;
 }
 
 .mobile-caption {
@@ -328,6 +319,7 @@ span.subhead {
 		opacity: 1;
 		transition: 0;
 		border: 0;
+		outline: 0;
 	}
 
 	.mobile-caption {

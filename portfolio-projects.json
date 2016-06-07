@@ -1,0 +1,202 @@
+[
+  {
+    "pub" : "la nacion",
+    "headline" : "US Presidents in Argentina",
+    "subhead" : "(\"Las visitas de los presidentes estadounidenses a la Argentina\")",
+    "url" : "http://www.lanacion.com.ar/1881864-las-visitas-de-los-presidentes-estadounidenses-a-la-argentina",
+    "thumbnail" : "projects/presidentes.png",
+    "id" : ""
+  },
+  {
+    "pub" : "la nacion",
+    "headline" : "Analysis of 40 presidential speeches",
+    "subhead" : "(\"Los 100 días de Macrí: qué palabras marcaron sus 43 discursos\")",
+    "url" : "http://www.lanacion.com.ar/1880829-los-100-dias-de-macri-que-palabras-marcaron-sus-43-discursos",
+    "thumbnail" : "projects/discursos.png",
+    "id" : ""
+  },
+  {
+    "pub" : "la nacion",
+    "headline" : "The Oscar Ballot",
+    "subhead" : "(\"Premios Oscar 2016: armá tu pronóstico\")",
+    "url" : "http://www.lanacion.com.ar/1872188-premios-oscar-2016-arma-tu-pronostico",
+    "thumbnail" : "projects/oscars.png",
+    "id" : ""
+  },
+  {
+    "pub" : "la nacion",
+    "headline" : "How much will you pay for energy?",
+    "subhead" : "(\"Aumento de luz: calculá la tarifa de tu boleta\")",
+    "url" : "http://www.lanacion.com.ar/1868328-aumento-luz-calculadora-tarifa",
+    "thumbnail" : "projects/calculadora.png",
+    "id" : ""
+  },
+  {
+    "pub" : "los angeles times",
+    "headline" : "Where is the cheapest pizza near you?",
+    "subhead" : "Compare the competition among the nation's three largest pizza chains.",
+    "url" : "http://graphics.latimes.com/cheapest-pizza-near-me/",
+    "thumbnail" : "projects/pizza.png",
+    "id" : ""
+  },
+  {
+    "pub" : "los angeles times",
+    "headline" : "Rise of Latino population in California counties",
+    "subhead" : "",
+    "url" : "http://www.latimes.com/visuals/graphics/la-me-g-census-latinos-20150708-htmlstory.html",
+    "thumbnail" : "projects/latinos.png",
+    "id" : ""
+  },
+  {
+    "pub" : "los angeles times",
+    "headline" : "Bike-sharing as a bridge between commute gaps",
+    "subhead" : "",
+    "url" : "http://www.latimes.com/local/california/la-me-california-commute-20150707-story.html",
+    "thumbnail" : "projects/bike.png",
+    "id" : ""
+  },
+  {
+    "pub" : "los angeles times",
+    "headline" : "California drought: Their rapids response",
+    "subhead" : "A1: June 30, 2015 (Print)",
+    "url" : "lat-june30.pdf",
+    "thumbnail" : "projects/kern.png",
+    "id" : ""
+  },
+  {
+    "pub" : "los angeles times",
+    "headline" : "California drought: Who has made the grade?",
+    "subhead" : "B2: June 25, 2015 (Print)",
+    "url" : "lat-june25.pdf",
+    "thumbnail" : "projects/drought.png",
+    "id" : ""
+  },
+  {
+    "pub" : "north by northwestern",
+    "headline" : "The many faces of the rock",
+    "subhead" : "We photographed the Rock every time it was painted this spring. Well, almost.",
+    "url" : "http://apps.northbynorthwestern.com/rock/",
+    "thumbnail" : "projects/rock.png",
+    "id" : ""
+  },
+  {
+    "pub" : "north by northwestern",
+    "headline" : "Finding Solace",
+    "subhead" : "One director takes her film from script to screen.",
+    "url" : "http://apps.northbynorthwestern.com/magazine/2015/spring/finding-solace/",
+    "thumbnail" : "projects/solace.png",
+    "id" : ""
+  },
+  {
+    "pub" : "north by northwestern",
+    "headline" : "Dorm room ball pit",
+    "subhead" : "(Video)",
+    "url" : "http://www.northbynorthwestern.com/story/hinman-residents-turn-dorm-room-into-a-ball-pit/",
+    "thumbnail" : "projects/ballpit.png",
+    "id" : ""
+  },
+  {
+    "pub" : "knight lab",
+    "headline" : "Socialite (beta)",
+    "subhead" : "Article analysis by Tweets",
+    "url" : "http://nicolezhu.io/socialite/",
+    "thumbnail" : "projects/socialite.png",
+    "id" : ""
+  },
+  {
+    "pub" : "knight lab",
+    "headline" : "Romaine",
+    "subhead" : "A new way to choose courses",
+    "url" : "https://romaine.herokuapp.com/",
+    "thumbnail" : "projects/romaine.png",
+    "id" : ""
+  },
+  {
+    "pub" : "class project",
+    "headline" : "Between the lines",
+    "subhead" : "",
+    "url" : "http://smallconflict.com/banned-books/",
+    "thumbnail" : "projects/between-lines.png",
+    "id" : ""
+  },
+  {
+    "pub" : "spoon magazine",
+    "headline" : "Summer Party Foods",
+    "subhead" : "(Print feature design - Spring 2015)",
+    "url" : "print/summer-party-full.png",
+    "thumbnail" : "print/summerparty-lettering.png",
+    "id" : "summer-party"
+  },
+  {
+    "pub" : "spoon magazine",
+    "headline" : "Spice It Up",
+    "subhead" : "(Print design - Fall 2014)",
+    "url" : "print/spice.png",
+    "thumbnail" : "print/spice-thumb.png",
+    "id" : "spice"
+  },
+  {
+    "pub" : "spoon magazine",
+    "headline" : "Holy Smokes",
+    "subhead" : "(Print feature design - Spring 2014)",
+    "url" : "print/bbq.png",
+    "thumbnail" : "print/bbq-thumb.png",
+    "id" : "bbq"
+  },
+  {
+    "pub" : "fun",
+    "headline" : "Buenos Aires: January 17-23, 2016",
+    "subhead" : "(Video log)",
+    "url" : "https://vimeo.com/152117566",
+    "thumbnail" : "projects/ba-vid.png",
+    "id" : ""
+  },
+  {
+    "pub" : "fun",
+    "headline" : "Taz the Maltese",
+    "subhead" : "(Acrylic on canvas)",
+    "url" : "print/dog.jpg",
+    "thumbnail" : "print/dog.png",
+    "id" : "taz"
+  },
+  {
+    "pub" : "fun",
+    "headline" : "Favorite Drinks",
+    "subhead" : "(Acrylic on canvas)",
+    "url" : "print/alc.jpg",
+    "thumbnail" : "print/alc.png",
+    "id" : "drinks"
+  },
+  {
+    "pub" : "fun",
+    "headline" : "SPOON Magazine Winter 2015 (Teaser)",
+    "subhead" : "(Video promo)",
+    "url" : "https://vimeo.com/121626080",
+    "thumbnail" : "projects/spoon-promo-vid.png",
+    "id" : ""
+  },
+  {
+    "pub" : "fun",
+    "headline" : "Spring Break 2014 #springbreaksaga",
+    "subhead" : "(Video log)",
+    "url" : "https://vimeo.com/90443596",
+    "thumbnail" : "projects/springbreak.png",
+    "id" : ""
+  },
+  {
+    "pub" : "fun",
+    "headline" : "Three Big Ci-teeth",
+    "subhead" : "(Acrylic on canvas)",
+    "url" : "print/lips.jpg",
+    "thumbnail" : "print/lips.png",
+    "id" : "lips"
+  },
+  {
+    "pub" : "fun",
+    "headline" : "Caricature of Kevin Tsukii",
+    "subhead" : "(Acrylic on canvas)",
+    "url" : "print/kevin.jpg",
+    "thumbnail" : "print/kevin.png",
+    "id" : "kevin"
+  }
+]
