@@ -45,33 +45,50 @@ $(document).ready(function(){
     $("#taz").fancybox()
         .attr('rel', 'gallery')
         .fancybox({
-            padding : 0
+            padding : 1
         });
 
     $("#drinks").fancybox()
         .attr('rel', 'gallery')
         .fancybox({
-            padding : 0
+            padding : 1
         });
 
     $("#lips").fancybox()
         .attr('rel', 'gallery')
         .fancybox({
-            padding : 0
+            padding : 1
         });
 
     $("#kevin").fancybox()
         .attr('rel', 'gallery')
         .fancybox({
-            padding : 0
+            padding : 1
         });
 
     $("#summer-party").fancybox()
         .attr('rel', 'gallery')
         .fancybox({
-            padding : 0
+            padding : 1
         });
 
+    $("#tea").fancybox()
+        .attr('rel', 'gallery')
+        .fancybox({
+            padding : 1
+        });
+
+    $("#spice").fancybox()
+        .attr('rel', 'gallery')
+        .fancybox({
+            padding : 1
+        });
+
+    $("#bbq").fancybox()
+        .attr('rel', 'gallery')
+        .fancybox({
+            padding : 1
+        });
 
 
     
