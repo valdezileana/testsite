@@ -100,6 +100,7 @@ a:hover {
 
 #fun-section {
 	display: none;
+	margin-top: 10px;
 }
 
 /* -------- CORNER RIBBONS (adapted from trapezoid https://css-tricks.com/examples/ShapesOfCSS/) ----------*/
