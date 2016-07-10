@@ -79,6 +79,10 @@ a:hover {
 	overflow: hidden;
 }
 
+#work-section {
+	margin-top: 10px;
+}
+
 .col-xs-4 {
 	position: relative;
 	/*margin-top: 15px;*/
