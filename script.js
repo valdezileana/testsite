@@ -44,7 +44,6 @@ $(document).ready(function(){
         url: "portfolio-projects.json",
         dataType: "json",
         success: function(data) {
-            console.log("What's up, Inspector? Welcome to my portfolio.");
             buildProjects(data);       
         }
     });
