@@ -1,9 +1,17 @@
 [
   {
     "pub" : "the washington post",
-    "headline" : "The RNC makes me feel 😳 🍻 😂 🚨 👏 💗.",
+    "headline" : "The Olympic city: Sights and sounds of Rio in 360",
     "subhead" : "",
-    "url" : "https://www.washingtonpost.com/graphics/politics/2016-election/rnc-emoji-reactions/",
+    "url" : "https://www.washingtonpost.com/graphics/sports/olympics/rio-olympics-360-video/",
+    "thumbnail" : "projects/rio360.png",
+    "id" : ""
+  },
+  {
+    "pub" : "the washington post",
+    "headline" : "The DNC makes me feel 😳 🍻 😂 🚨 👏 💗.",
+    "subhead" : "",
+    "url" : "https://www.washingtonpost.com/graphics/politics/2016-election/dnc-emoji-reactions/",
     "thumbnail" : "projects/emoji.png",
     "id" : ""
   },
