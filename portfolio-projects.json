@@ -1,6 +1,14 @@
 [
   {
     "pub" : "the washington post",
+    "headline" : "Will somebody please give Norm Macdonald another TV show?",
+    "subhead" : "",
+    "url" : "https://www.washingtonpost.com/graphics/entertainment/norm-macdonald/",
+    "thumbnail" : "projects/norm.png",
+    "id" : ""
+  },
+  {
+    "pub" : "the washington post",
     "headline" : "The Olympic city: Sights and sounds of Rio in 360",
     "subhead" : "",
     "url" : "https://www.washingtonpost.com/graphics/sports/olympics/rio-olympics-360-video/",
@@ -125,14 +133,6 @@
     "subhead" : "A new way to choose courses",
     "url" : "https://romaine.herokuapp.com/",
     "thumbnail" : "projects/romaine.png",
-    "id" : ""
-  },
-  {
-    "pub" : "class project",
-    "headline" : "Between the lines",
-    "subhead" : "",
-    "url" : "http://smallconflict.com/banned-books/",
-    "thumbnail" : "projects/between-lines.png",
     "id" : ""
   },
   {
