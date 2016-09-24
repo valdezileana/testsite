@@ -1,6 +1,14 @@
 [
   {
     "pub" : "the washington post",
+    "headline" : "Clinton and Trump's August campaign stops",
+    "subhead" : "",
+    "url" : "https://twitter.com/PostGraphics/status/775385514790772738",
+    "thumbnail" : "projects/campaign.gif",
+    "id" : ""
+  },
+  {
+    "pub" : "the washington post",
     "headline" : "Will somebody please give Norm Macdonald another TV show?",
     "subhead" : "",
     "url" : "https://www.washingtonpost.com/graphics/entertainment/norm-macdonald/",
