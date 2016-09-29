@@ -22,7 +22,6 @@
     		padding-top: 10px;
 			margin-top: 25px;
 			margin-bottom: 20px;
-			
 		}
 
 		form {
@@ -63,7 +62,7 @@
 
 		.icon {
 			margin-right: 20px;
-			height: 80px;
+			height: 100px;
 			width: 80px;
 			float: left;
 			background-repeat: no-repeat;
@@ -113,10 +112,9 @@
 		}
 
 		#tooltip-container {
-			height: 80px;
-			width: 60%;
-			margin: 0 auto;
-			
+			height: 100px;
+			width: 70%;
+			margin: 0 auto;	
 		}
 
 		.tooltip {
@@ -129,6 +127,7 @@
 		.info {
 			height: 20px;
 			margin-top: 5px;
+			font-size: 15px;
 			color: #333;
 			font-family: "Franklin Gothic Book"
 		}
@@ -140,8 +139,9 @@
 				width: 100%;
 			}
 
-			#filter-container {
-				width: 60%;
+			#tooltip-container {
+				width: 90%;
+				margin: 0 auto;
 			}
 
 			.tooltip {
@@ -151,22 +151,23 @@
 			.info {
 				font-size: 14px;
 			}
+
+			.icon {
+				width: 65px;
+			}
 		}
 
-
 		@media (max-width: 600px){
-			#filter-container {
+			#tooltip-container {
+				height: 150px;
 				width: 100%;
 			}
 
-			#tooltip-container {
-				width: 95%;
-			}
-
 			.icon {
-				width: 55px;
+				height: 150px;
 			}
 		}
+
 
 		@media (max-width: 425px){
 
@@ -179,12 +180,12 @@
 			}
 
 			.tooltip {
-				font-size: 17.5px;
+				font-size: 16.5px;
 			}
 
 			#tooltip-container {
 				height: 100px;
-				width: 100%;
+				width: 96.5%;
 				margin: 0 auto;
 			}
 
@@ -193,6 +194,7 @@
 			}
 
 			.icon {
+				display: none;
 				width: 30px;
 				height: 90px;
 				margin-right: 10px;
@@ -321,6 +323,7 @@
     }
 
     var outlineState = function(checked, state, initiative, note){
+    	// console.log(initiative);
 
     	svg.selectAll("." + state.split(' ').join('-'))
 			.on("mouseover", function(d) { 
@@ -334,7 +337,14 @@
 			    		.classed(checked, true)
 			    		.transition()        
 			      	   	.duration(200)            
-			           	.text(state + ': ' + initiative)
+			           	.text(function(){
+			           		if (initiative) {
+			           			return state + ': ' + initiative
+			           		} else {
+			           			return state
+			           		}
+			           		
+			           	})
 
 			        info.transition()
 			        	.duration(200)
@@ -396,11 +406,18 @@
 				return "state " + (d.properties.name).split(' ').join('-'); 
 			})
 
-		d3.json("data.json", function(data) { // initiative data
+		d3.json("initiatives.json", function(data) { // initiative data
 			// to start on marijuana
+			console.log(data);
 			for (a = 0; a < data['marijuana'].length; a++) {
 	    		var dataState = data['marijuana'][a].state;
 	    		var value = 1;
+	    		var initiative;
+	    		if (data['marijuana'][a].initiative) {
+	    			initiative = data['marijuana'][a].initiative;
+	    		} else {
+	    			initiative = '';
+	    		}
 				colorStates(checked, dataState, value, data['marijuana'][a].initiative, data['marijuana'][a].note);
 	    	}
 
@@ -410,13 +427,14 @@
 		        clearStates();
 		    	for (i = 0; i < data[checked].length; i++) {
 		    		var dataState = data[checked][i].state;
+		    		var initiative;
 		    		value = topicObj[checked];
 		    		if (data[checked][i].initiative) {
-		    			var initiative = data[checked][i].initiative;
+		    			initiative = data[checked][i].initiative;
 		    		} else {
-		    			var initiative = ' ';
+		    			initiative = '';
 		    		}
-		    		
+
 					colorStates(checked, dataState, value, initiative, data[checked][i].note);
 		    	}
 
