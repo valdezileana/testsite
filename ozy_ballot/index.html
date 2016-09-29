@@ -96,7 +96,7 @@
 
 		#map {
 			max-width: 1000px;
-			width: 95%;
+			width: 87%;
 			margin: 0 auto;
 		}
 
@@ -114,7 +114,7 @@
 
 		#tooltip-container {
 			height: 80px;
-			width: 70%;
+			width: 60%;
 			margin: 0 auto;
 		}
 
@@ -135,9 +135,12 @@
 		/*******MEDIA QUERIES**********/
 
 		@media (max-width: 800px){
-
 			#map {
 				width: 100%;
+			}
+
+			#filter-container {
+				width: 60%;
 			}
 
 			.tooltip {
@@ -151,7 +154,9 @@
 
 
 		@media (max-width: 600px){
-			
+			#filter-container {
+				width: 100%;
+			}
 
 			#tooltip-container {
 				width: 95%;
@@ -171,14 +176,23 @@
 				font-size: 17.5px;
 			}
 
+			#tooltip-container {
+				height: 100px;
+				width: 100%;
+				/*margin: 0 auto;*/
+			}
+
 			.info {
-				font-size: 13spx;
+				font-size: 13px;
 			}
 
 			.icon {
 				width: 55px;
+				height: 50px;
+				margin-right: 10px;
 			}
-		}
+
+
 
 	</style>
 
@@ -230,7 +244,7 @@
 <!-- *******JAVASCRIPT********** -->
 <script>
 	//Width and height of map for responsiveness
-	var margin = {top: 10, left: 5, bottom: 10, right: 5};
+	var margin = {top: 10, left: 3, bottom: 10, right: 3};
 	var pre_width = parseInt(d3.select('#map').style('width'));
 	var width = pre_width - margin.left - margin.right;
 	var mapRatio = .5;
