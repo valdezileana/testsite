@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ballot Initiatives 2016</title>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="http://d3js.org/topojson.v1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+	<!-- favicon -->
+	<link rel="icon" href="http://www.ozy.com/magazine/graphics/favicon.ico">
+
+
+	<!-- ******** CSS *******-->
+	<style type="text/css">
+
+		#filter-container {
+			width: 90%;
+    		margin-left: auto;
+    		margin-right: auto;
+    		overflow: hidden;
+    		padding-top: 10px;
+			margin-top: 25px;
+			margin-bottom: 20px;
+			
+		}
+
+		form {
+			text-align: center;
+		}
+
+		.filter{
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+
+		input[type="radio"] {
+		    display:none;
+		}
+
+		[type="radio"]:checked + label {
+			color: #fff;
+			background-color: #7a7a7a;
+			border: 1px solid #7a7a7a;
+		}
+
+		label {
+			font-family: "Franklin Gothic Book";
+			color:#7a7a7a;
+			border: 1px solid #a3a3a3;
+			border-radius: 4px;
+			margin: 0 3px;
+			padding: 5px 10px;
+			cursor: pointer;
+			-webkit-transition: all 0.2s linear;
+		}
+
+		label:hover {
+			color: #fff;
+			background-color: #a3a3a3;
+			border: 1px solid #a3a3a3;
+		}
+
+		.icon {
+			margin-right: 20px;
+			height: 100px;
+			width: 80px;
+			float: left;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		.icon--marijuana {
+			background-image: url("img/marijuana.png");
+		}
+
+		.icon--wage {
+			background-image: url("img/wage.png");
+		}
+
+		.icon--gun {
+			background-image: url("img/gun.png");
+		}
+
+		.icon--tobacco {
+			background-image: url("img/tobacco.png");
+		}
+
+		.icon--education {
+			background-image: url("img/education.png");
+		}
+
+		.icon--elections {
+			background-image: url("img/elections.png");
+		}
+
+		#map {
+			max-width: 1000px;
+			width: 95%;
+			margin: 0 auto;
+		}
+
+		svg {
+			display: block;
+			margin: auto;
+		}
+
+		.state {
+			opacity:0.75;    		
+			stroke: #fff;
+			fill: #dbdbdb;
+    		stroke-width: 1;
+		}
+
+		#tooltip-container {
+			height: 80px;
+			width: 70%;
+			margin: 0 auto;
+		}
+
+		.tooltip {
+			margin-top: 5px;
+			font-size: 25px;
+			font-family: "Franklin Gothic Medium";
+			text-transform: uppercase;
+		}
+
+		.info {
+			height: 20px;
+			margin-top: 5px;
+			color: #333;
+			font-family: "Franklin Gothic Book"
+		}
+
+		/*******MEDIA QUERIES**********/
+
+		@media (max-width: 800px){
+
+			#map {
+				width: 100%;
+			}
+
+			.tooltip {
+				font-size: 21px;
+			}
+
+			.info {
+				font-size: 14px;
+			}
+		}
+
+
+		@media (max-width: 600px){
+			
+
+			#tooltip-container {
+				width: 95%;
+			}
+
+			.icon {
+				width: 55px;
+			}
+		}
+
+		@media (max-width: 425px){
+			label {
+				font-size: 13px;
+			}
+
+			.tooltip {
+				font-size: 17.5px;
+			}
+
+			.info {
+				font-size: 13spx;
+			}
+
+			.icon {
+				width: 55px;
+			}
+		}
+
+	</style>
+
+</head>
+<body>
+
+<div id="filter-container">
+ 	<form>
+ 		<nobr>
+ 		<div class="filter">
+			<input type="radio" id="marijuana" name="topic" checked=true/>
+			<label for="marijuana">Marijuana</label>
+		</div>
+		<div class="filter">
+			<input type="radio" id="wage" name="topic"/>
+			<label for="wage">Minimum wage</label>
+		</div>
+		<div class="filter">
+			<input type="radio" id="gun" name="topic"/>
+			<label for="gun">Gun control</label>
+		</div>
+		</nobr>
+		<nobr>
+		<div class="filter">
+			<input type="radio" id="tobacco" name="topic"/>
+			<label for="tobacco">Tobacco</label>
+		</div>
+		<div class="filter">
+			<input type="radio" id="education" name="topic"/>
+			<label for="education">Education</label>
+		</div>
+		<div class="filter">	
+			<input type="radio" id="elections" name="topic"/>
+			<label for="elections">Elections</label>
+ 		</div>
+ 		</nobr>
+   </form>
+</div>
+
+<div id="tooltip-container">
+	<div class="icon icon--marijuana"></div>
+</div>
+
+<div class="map-container"> 
+	<div id="map"></div>
+</div>
+
+
+<!-- *******JAVASCRIPT********** -->
+<script>
+	//Width and height of map for responsiveness
+	var margin = {top: 10, left: 5, bottom: 10, right: 5};
+	var pre_width = parseInt(d3.select('#map').style('width'));
+	var width = pre_width - margin.left - margin.right;
+	var mapRatio = .5;
+	var height = width * mapRatio;
+
+	// D3 Projection
+	var projection = d3.geoAlbersUsa()
+	   .scale(width)
+	   .translate([width / 2, height / 2]);
+
+	var path = d3.geoPath().projection(projection);
+
+	var color = d3.scaleLinear()
+		.domain([1,2,3,4,5,6])
+    	.range(["#37853F", "#82B441", "#3a3a3a", "#c4802a","#5155a5", "#fbaa20"]);
+
+	var svg = d3.select("#map").append("svg")
+	    .attr("width", width)
+	    .attr("height", height);
+
+	var tooltip = d3.select("#tooltip-container")
+	    .append("div")   
+		.attr("class", "tooltip")
+		.text("States with ballot initiatives on marijuana"); // on initial load
+
+	var info = d3.select("#tooltip-container")
+	    .append("p")   
+		.attr("class", "info")                
+
+	var checked = "marijuana";
+
+	var topicObj = {
+		"marijuana": 1,
+		"wage": 2,
+		"gun": 3,
+		"tobacco": 4,
+		"education": 5,
+		"elections": 6
+	};
+
+	var clearStates = function(){
+		svg.selectAll('.state')
+			.style("fill", "#dbdbdb")
+			.classed("bold",false)
+	}
+
+	var colorStates = function(checked, state, value, initiative, note){
+        svg.selectAll('.' +state)
+            .transition()
+            .attr("class", "state bold " + state)
+            .style("fill", function(d){
+             	if (d.properties.name == state) {
+                	return color(value);
+                }
+            })
+
+        outlineState(checked, state, initiative, note)
+    }
+
+    var changeIcon = function(checked){
+    	d3.select('.icon')
+    		.attr('class','icon icon--'+checked)
+
+    	tooltip
+    		.text(function(){
+    			return "States with ballot initiatives on " + checked
+    		})
+    }
+
+    var outlineState = function(checked, state, initiative, note){
+
+    	svg.selectAll("." + state)
+			.on("mouseover", function(d) { 
+				if ( this.classList.contains("bold")) {
+					d3.select(this.parentNode.appendChild(this))
+						.style('stroke','#000')
+						.style('stroke-width', 1.5)
+						.style('opacity','1');
+		
+			    	tooltip
+			    		.classed(checked, true)
+			    		.transition()        
+			      	   	.duration(200)            
+			           	.text(state + ': ' + initiative)
+
+			        info.transition()
+			        	.duration(200)
+			        	.text(note)
+				}
+			})	
+			.on("mouseout", function(d) {
+				if ( this.classList.contains("bold")) {
+					d3.select(this)
+						.style('stroke','#fff')
+						.style('stroke-width', 1)
+						.style('opacity','0.75'); 
+
+			        tooltip
+			        	.classed(checked, false)
+			        	.transition()        
+			           	.duration(200)
+			           	.text(function(){
+			           		return "States with ballot initiatives on " + checked
+			           	})
+
+			        info.transition()
+			        	.duration(200)
+			        	.text('')
+			    }
+		    }); 
+    }
+
+    var resize = function() {
+    	// adjust things when the window size changes
+	    width = parseInt(d3.select('#map').style('width'));
+	    width = width - margin.left - margin.right;
+	    height = width * mapRatio;
+
+	    // update projection
+	    projection
+	        .translate([width / 2, height / 2])
+	        .scale(width);
+
+	    // resize maps
+		svg
+	        .style("width", width + "px")
+	        .style("height", height + "px");
+
+	    svg.selectAll('.state').attr('d', path);
+
+	}
+
+    d3.select(window).on('resize', resize);
+
+    d3.json("us-states.json", function(us) {
+
+    	svg.selectAll("path")
+			.data(us.features)
+			.enter()
+			.append("path")
+			.attr("d", path)
+			.attr("class",function(d){
+				return "state " + d.properties.name; 
+			})
+
+		d3.json("data.json", function(data) { // initiative data
+			// to start on marijuana
+			for (a = 0; a < data['marijuana'].length; a++) {
+	    		var dataState = data['marijuana'][a].state;
+	    		var value = 1;
+				colorStates(checked, dataState, value, data['marijuana'][a].initiative, data['marijuana'][a].note);
+	    	}
+
+	    	d3.selectAll("input").on("change", function() {
+		        checked = this.id;
+		        changeIcon(checked);
+		        clearStates();
+		    	for (i = 0; i < data[checked].length; i++) {
+		    		var dataState = data[checked][i].state;
+		    		value = topicObj[checked];
+					colorStates(checked, dataState, value, data[checked][i].initiative, data[checked][i].note);
+		    	}
+
+		    }); 
+		});	
+		
+    });
+
+</script>
+
+</body>
+</html>
