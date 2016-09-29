@@ -60,9 +60,30 @@
 			border: 1px solid #a3a3a3;
 		}
 
+		#tooltip-container {
+			/*height: 200px;*/
+			width: 75%;
+			margin: 15px auto 0 auto;	
+		}
+
+		.tooltip {
+			margin-top: 5px;
+			font-size: 25px;
+			font-family: "Futura", sans-serif;
+			text-transform: uppercase;
+		}
+
+		.info {
+			/*height: 20px;*/
+			margin-top: 5px;
+			font-size: 15px;
+			color: #333;
+			font-family: "Avenir", sans-serif;
+		}
+
 		.icon {
 			margin-right: 20px;
-			height: 110px;
+			height: 180px;
 			width: 80px;
 			float: left;
 			background-repeat: no-repeat;
@@ -111,27 +132,6 @@
     		stroke-width: 1;
 		}
 
-		#tooltip-container {
-			height: 100px;
-			width: 75%;
-			margin: 0 auto;	
-		}
-
-		.tooltip {
-			margin-top: 5px;
-			font-size: 25px;
-			font-family: "Futura", sans-serif;
-			text-transform: uppercase;
-		}
-
-		.info {
-			height: 20px;
-			margin-top: 5px;
-			font-size: 15px;
-			color: #333;
-			font-family: "Avenir", sans-serif;
-		}
-
 		/*******MEDIA QUERIES**********/
 
 		@media (max-width: 800px){
@@ -157,22 +157,10 @@
 			}
 		}
 
-		@media (max-width: 600px){
-			#tooltip-container {
-				height: 150px;
-				width: 100%;
-			}
-
-			.icon {
-				height: 150px;
-			}
-		}
-
-
 		@media (max-width: 425px){
-
 			#filter-container {
 				margin-bottom: 5px;
+				width: 100%;
 			}
 
 			label {
@@ -184,8 +172,7 @@
 			}
 
 			#tooltip-container {
-				height: 115px;
-				width: 96.5%;
+				width: 95%;
 				margin: 0 auto;
 			}
 
@@ -195,10 +182,16 @@
 
 			.icon {
 				display: none;
-				width: 30px;
-				height: 90px;
-				margin-right: 10px;
 			}
+		}
+
+		@media (max-width: 350px){
+			
+			label {
+				margin: 0 2px;
+				padding: 3px 7px;
+			}
+		}
 
 
 
@@ -240,12 +233,13 @@
    </form>
 </div>
 
-<div id="tooltip-container">
-	<div class="icon icon--marijuana"></div>
-</div>
-
 <div class="map-container"> 
 	<div id="map"></div>
+</div>
+
+<div id="tooltip-container">
+	<div class="icon icon--marijuana"></div>
+	<div id="tooltip-box"></div>
 </div>
 
 
@@ -273,12 +267,12 @@
 	    .attr("width", width)
 	    .attr("height", height);
 
-	var tooltip = d3.select("#tooltip-container")
+	var tooltip = d3.select("#tooltip-box")
 	    .append("div")   
 		.attr("class", "tooltip")
 		.text("States with ballot initiatives on marijuana"); // on initial load
 
-	var info = d3.select("#tooltip-container")
+	var info = d3.select("#tooltip-box")
 	    .append("p")   
 		.attr("class", "info")                
 
