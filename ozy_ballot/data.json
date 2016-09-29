@@ -3,20 +3,14 @@
       {
          "state": "Arizona",
          "initiative": "Proposition 205",
-         "note": "Supports this measure to legalize marijuana possession and consumption by people 21 and older",
+         "note": "Supports this measure to legalize marijuana possession and consumption by people 21 and older.",
          "link": "https://ballotpedia.org/Arizona_Marijuana_Legalization,_Proposition_205_(2016)"
       },
       {
          "state": "Arkansas",
-         "initiative": "Issue 7",
-         "note": "Supports this proposal to legalize medical marijuana and puts the Arkansas Department of Health in charge of implementing the program.",
+         "initiative": "",
+         "note": "[ISSUE 6]: Supports this proposal to legalize medical marijuana, create a Medical Marijuana Commission and place no limit on the cost for patient card fees. [ISSUE 7]: Supports this proposal to legalize medical marijuana and puts the Arkansas Department of Health in charge of implementing the program.",
          "link": "https://ballotpedia.org/Arkansas_Medical_Cannabis_Statute,_Issue_7_(2016)"
-      },
-      {
-         "state": "Arkansas",
-         "initiative": "Issue 6",
-         "note": "Supports this proposal to legalize medical marijuana, create a Medical Marijuana Commission, and place no limit on the cost for patient card fees.",
-         "link": "https://ballotpedia.org/Arkansas_Medical_Marijuana,_Issue_6_(2016)"
       },
       {
          "state": "California",
@@ -77,7 +71,7 @@
       {
          "state": "Maine",
          "initiative": "Question 4",
-         "note": "Gradually increases the state's minimum wage to $12 by 2020, thereafter adjusting the minimum wage with fluctuations in the consumer price index",
+         "note": "Gradually increases the state's minimum wage to $12 by 2020, thereafter adjusting the minimum wage with fluctuations in the consumer price index.",
          "link": "https://ballotpedia.org/Maine_Minimum_Wage_Increase,_Question_4_(2016)"
       },
       {
@@ -123,7 +117,7 @@
       {
          "state": "California",
          "initiative": "Proposition 56",
-         "note": "Favors increasing the cigarette tax by $2.00 per pack, with equivalent increases on other tobacco products and electronic cigarettes.",
+         "note": "Favors increasing the cigarette tax by $2 per pack, with equivalent increases on other tobacco products and electronic cigarettes.",
          "link": "https://ballotpedia.org/California_Proposition_56,_Tobacco_Tax_Increase_(2016)"
       },
       {
@@ -134,21 +128,9 @@
       },
       {
          "state": "Missouri",
-         "initiative": "Proposition A",
-         "note": "Supports this proposal to increase taxes on cigarettes by 23 cents per pack by 2021 and to add an additional 5 percent sales tax for other tobacco products.",
+         "initiative": "",
+         "note": "[PROPOSITION A]: Supports this proposal to increase taxes on cigarettes by 23 cents per pack by 2021 and to add an additional 5 percent sales tax for other tobacco products. [CONSTITUTIONAL AMENDMENT 3]: Supports this proposal to increase the taxes on cigarette packs from 17 cents to 77 cents by 2020 and impose an additional fee on tobacco wholesalers at an initial rate of 67 cents per pack.",
          "link": "https://ballotpedia.org/Missouri_23_Cent_Cigarette_Tax,_Proposition_A_(2016)"
-      },
-      {
-         "state": "Missouri",
-         "initiative": "Constitutional Amendment 3",
-         "note": "Supports this proposal to increase the taxes on cigarette packs from 17 cents to 77 cents by 2020 and impose an additional fee on tobacco wholesalers at an initial rate of 67 cents per pack.",
-         "link": "https://ballotpedia.org/Missouri_60_Cent_Cigarette_Tax,_Constitutional_Amendment_3_(2016)"
-      },
-      {
-         "state": "North Dakota",
-         "initiative": "Initiated Statutory Measure 4",
-         "note": "supports increasing taxes on tobacco products and placing the generated tax revenue into a new state fund, called the Veteran's tobacco trust fund, that would pay for veterans' services and benefits",
-         "link": "https://ballotpedia.org/North_Dakota_Tobacco_Tax_Increase,_Initiated_Statutory_Measure_4_(2016)"
       }
    ],
    "education": [
@@ -166,15 +148,9 @@
       },
       {
          "state": "California",
-         "initiative": "Proposition 51",
-         "note": "Supports the state issuing $9 billion in bonds to fund improvement and construction of school facilities for K-12 schools and community colleges.",
+         "initiative": "",
+         "note": "[PROPOSITION 51]: Supports the state issuing $9 billion in bonds to fund improvement and construction of school facilities for K-12 schools and community colleges. [PROPOSITION 58]: In favor of repealing most of 1998's Proposition 227, the \"English in Public Schools\" Initiative, thus effectively allowing non-English languages to be used in public educational instruction.",
          "link": "https://ballotpedia.org/California_Proposition_51,_Public_School_Facility_Bonds_(2016)"
-      },
-      {
-         "state": "California",
-         "initiative": "Proposition 58",
-         "note": "In favor of repealing most of the 1998 Proposition 227, the \"English in Public Schools\" Initiative, thus effectively allowing non-English languages to be used in public educational instruction.",
-         "link": "https://ballotpedia.org/California_Proposition_58,_Non-English_Languages_Allowed_in_Public_Education_(2016)"
       },
       {
          "state": "Georgia",
@@ -203,20 +179,14 @@
       {
          "state": "Oklahoma",
          "initiative": "State Question 779",
-         "note": "Is a vote in favor of increasing the state sales tax by one percent to generate a predicted $615 million per year for education funding.",
+         "note": "Is a vote in favor of increasing the state sales tax by 1 percent to generate a predicted $615 million per year for education funding.",
          "link": "https://ballotpedia.org/Oklahoma_One_Percent_Sales_Tax,_State_Question_779_(2016)"
       },
       {
          "state": "Oregon",
-         "initiative": "Measure 99",
-         "note": "Supports creating an \"Outdoor School Education Fund,\" sourced from state lottery proceeds, to support outdoor school programs.",
+         "initiative": "",
+         "note": "[MEASURE 98]: Supports this proposal to require the Oregon State Legislature to fund dropout prevention and career and college readiness programs in Oregon high schools. [MEASURE 99]: Supports creating an \"Outdoor School Education Fund,\" sourced from state lottery proceeds, to support outdoor school programs.",
          "link": "https://ballotpedia.org/Oregon_Outdoor_School_Lottery_Fund,_Measure_99_(2016)"
-      },
-      {
-         "state": "Oregon",
-         "initiative": "Measure 98",
-         "note": "Supports this proposal to require the Oregon State Legislature to fund dropout-prevention and career and college readiness programs in Oregon high schools.",
-         "link": "https://ballotpedia.org/Oregon_State_Funding_for_Dropout_Prevention_and_College_Readiness,_Measure_98_(2016)"
       },
       {
          "state": "South Dakota",
@@ -228,15 +198,9 @@
    "elections": [
       {
          "state": "Colorado",
-         "initiative": "Proposition 107",
-         "note": "Supports this proposal to restore presidential primary elections held before the end of March and make them open in Colorado.",
+         "initiative": "",
+         "note": "[PROPOSITION 107]: Supports this proposal to restore presidential primary elections held before the end of March and make them open in Colorado. [PROPOSITION 108]: Supports this proposal to allow unaffiliated electors to vote in the primary election of a major political party without declaring an affiliation with that political party and to permit a political party, in some circumstances, to select candidates by committee or convention, rather than through a primary election.",
          "link": "https://ballotpedia.org/Colorado_Presidential_Primary_Election,_Proposition_107_(2016)"
-      },
-      {
-         "state": "Colorado",
-         "initiative": "Proposition 108",
-         "note": "Supports this proposal to allow unaffiliated electors to vote in the primary election of a major political party without declaring an affiliation with that political party and to permit a political party, in some circumstances, to select candidates by committee or convention, rather than through a primary election.",
-         "link": "https://ballotpedia.org/Colorado_Unaffiliated_Elector,_Proposition_108_(2016)"
       },
       {
          "state": "Maine",
@@ -246,38 +210,20 @@
       },
       {
          "state": "Missouri",
-         "initiative": "Constitutional Amendment 2",
-         "note": "Supports this proposal to establish limits on campaign contributions to candidates for state or judicial office.",
+         "initiative": "",
+         "note": "[CONSTITUTIONAL AMENDMENT 2]: Supports this proposal to establish limits on campaign contributions to candidates for state or judicial office. [CONSTITUTIONAL AMENDMENT 6]: Supports this proposal to empower the state government to require the presentation of voter IDs at public elections for the purpose of identifying and proving national and state citizenship.",
          "link": "https://ballotpedia.org/Missouri_State_and_Judicial_Campaign_Contribution_Limits,_Constitutional_Amendment_2_(2016)"
       },
       {
-         "state": "Missouri",
-         "initiative": "Constitutional Amendment 6",
-         "note": "Supports this proposal to empower the state government to require the presentation of voter IDs at public elections for the purpose of identifying and proving national and state citizenship.",
-         "link": "https://ballotpedia.org/Missouri_Voter_ID_Requirement,_Constitutional_Amendment_6_(2016)"
-      },
-      {
          "state": "South Dakota",
-         "initiative": "Referred Law 19",
-         "note": "Supported Senate Bill 69 (SB 69), a statute changing election laws regarding independent candidates, minor political parties, and signature collection numbers and due dates",
+         "initiative": "",
+         "note": "[REFERRED LAW 19]: Supported Senate Bill 69 (SB 69), a statute changing election laws regarding independent candidates, minor political parties, and signature collection numbers and due dates. [CONSTITUTIONAL AMENDMENT V]: A vote in favor of establishing nonpartisan elections. [INITIATED MEASURE 22]: Is a vote in favor of revising state campaign finance and lobbying laws and creating a publicly funded campaign finance program and an ethics commission.",
          "link": "https://ballotpedia.org/South_Dakota_Independent_Candidates_Election_Law_Referendum,_Referred_Law_19_(2016)"
-      },
-      {
-         "state": "South Dakota",
-         "initiative": "Constitutional Amendment V",
-         "note": "A vote in favor of establishing nonpartisan elections.",
-         "link": "https://ballotpedia.org/South_Dakota_Nonpartisan_Elections,_Constitutional_Amendment_V_(2016)"
-      },
-      {
-         "state": "South Dakota",
-         "initiative": "Initiated Measure 22",
-         "note": "Is a vote in favor of revising state campaign finance and lobbying laws and creating a publicly funded campaign finance program and an ethics commission.",
-         "link": "https://ballotpedia.org/South_Dakota_Revision_of_State_Campaign_Finance_and_Lobbying_Laws,_Initiated_Measure_22_(2016)"
       },
       {
          "state": "Alaska",
          "initiative": "Ballot Measure 1",
-         "note": "Supports this proposal to register voting-age Alaskans to vote when submitting an annual permanent fund dividend application, unless they opt out",
+         "note": "Supports this proposal to register voting-age Alaskans to vote when submitting an annual permanent fund dividend application, unless they opt out.",
          "link": "https://ballotpedia.org/Alaska_Voter_Registration_via_the_Permanent_Fund_Dividend_Application,_Ballot_Measure_1_(2016)"
       }
    ]

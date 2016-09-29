@@ -169,6 +169,11 @@
 		}
 
 		@media (max-width: 425px){
+
+			#filter-container {
+				margin-bottom: 5px;
+			}
+
 			label {
 				font-size: 13px;
 			}
@@ -293,9 +298,9 @@
 	}
 
 	var colorStates = function(checked, state, value, initiative, note){
-        svg.selectAll('.' +state)
+        svg.selectAll('.' +state.split(' ').join('-'))
             .transition()
-            .attr("class", "state bold " + state)
+            .attr("class", "state bold " + state.split(' ').join('-'))
             .style("fill", function(d){
              	if (d.properties.name == state) {
                 	return color(value);
@@ -317,7 +322,7 @@
 
     var outlineState = function(checked, state, initiative, note){
 
-    	svg.selectAll("." + state)
+    	svg.selectAll("." + state.split(' ').join('-'))
 			.on("mouseover", function(d) { 
 				if ( this.classList.contains("bold")) {
 					d3.select(this.parentNode.appendChild(this))
@@ -388,7 +393,7 @@
 			.append("path")
 			.attr("d", path)
 			.attr("class",function(d){
-				return "state " + d.properties.name; 
+				return "state " + (d.properties.name).split(' ').join('-'); 
 			})
 
 		d3.json("data.json", function(data) { // initiative data
@@ -406,7 +411,13 @@
 		    	for (i = 0; i < data[checked].length; i++) {
 		    		var dataState = data[checked][i].state;
 		    		value = topicObj[checked];
-					colorStates(checked, dataState, value, data[checked][i].initiative, data[checked][i].note);
+		    		if (data[checked][i].initiative) {
+		    			var initiative = data[checked][i].initiative;
+		    		} else {
+		    			var initiative = ' ';
+		    		}
+		    		
+					colorStates(checked, dataState, value, initiative, data[checked][i].note);
 		    	}
 
 		    }); 
