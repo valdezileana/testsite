@@ -94,11 +94,11 @@
 			background-image: url("img/marijuana.png");
 		}
 
-		.icon--wage {
+		.icon--minimum_wage {
 			background-image: url("img/wage.png");
 		}
 
-		.icon--gun {
+		.icon--guns {
 			background-image: url("img/gun.png");
 		}
 
@@ -208,12 +208,12 @@
 			<label for="marijuana">Marijuana</label>
 		</div>
 		<div class="filter">
-			<input type="radio" id="wage" name="topic"/>
-			<label for="wage">Minimum wage</label>
+			<input type="radio" id="minimum_wage" name="topic"/>
+			<label for="minimum_wage">Minimum wage</label>
 		</div>
 		<div class="filter">
-			<input type="radio" id="gun" name="topic"/>
-			<label for="gun">Gun control</label>
+			<input type="radio" id="guns" name="topic"/>
+			<label for="guns">Gun control</label>
 		</div>
 		</nobr>
 		<nobr>
@@ -280,8 +280,8 @@
 
 	var topicObj = {
 		"marijuana": 1,
-		"wage": 2,
-		"gun": 3,
+		"minimum wage": 2,
+		"guns": 3,
 		"tobacco": 4,
 		"education": 5,
 		"elections": 6
@@ -308,11 +308,11 @@
 
     var changeIcon = function(checked){
     	d3.select('.icon')
-    		.attr('class','icon icon--'+checked)
+    		.attr('class','icon icon--'+checked.split(' ').join('_'))
 
     	tooltip
     		.text(function(){
-    			return "States with ballot initiatives on " + checked
+    			return "States with ballot initiatives on " + checked.split('_').join(' ')
     		})
     }
 
@@ -328,7 +328,7 @@
 						.style('opacity','1');
 		
 			    	tooltip
-			    		.classed(checked, true)
+			    		.classed(checked.split('_').join(' '), true)
 			    		.transition()        
 			      	   	.duration(200)            
 			           	.text(function(){
@@ -353,11 +353,11 @@
 						.style('opacity','0.75'); 
 
 			        tooltip
-			        	.classed(checked, false)
+			        	.classed(checked.split('_').join(' '), false)
 			        	.transition()        
 			           	.duration(200)
 			           	.text(function(){
-			           		return "States with ballot initiatives on " + checked
+			           		return "States with ballot initiatives on " + checked.split('_').join(' ')
 			           	})
 
 			        info.transition()
@@ -400,9 +400,10 @@
 				return "state " + (d.properties.name).split(' ').join('-'); 
 			})
 
-		d3.json("initiatives.json", function(data) { // initiative data
+		d3.json("ballot.json", function(data) { // initiative data
+
 			// to start on marijuana
-			console.log(data);
+			// console.log(data);
 			for (a = 0; a < data['marijuana'].length; a++) {
 	    		var dataState = data['marijuana'][a].state;
 	    		var value = 1;
@@ -416,7 +417,7 @@
 	    	}
 
 	    	d3.selectAll("input").on("change", function() {
-		        checked = this.id;
+		        checked = (this.id).split('_').join(' ');
 		        changeIcon(checked);
 		        clearStates();
 		    	for (i = 0; i < data[checked].length; i++) {

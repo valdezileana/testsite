@@ -55,7 +55,7 @@
          "link": "https://ballotpedia.org/North_Dakota_Medical_Marijuana_Legalization,_Initiated_Statutory_Measure_5_(2016)"
       }
    ],
-   "wage": [
+   "minimum wage": [
       {
          "state": "Arizona",
          "initiative": "Proposition 206",
@@ -87,7 +87,7 @@
          "link": "https://ballotpedia.org/Washington_Minimum_Wage_Increase,_Initiative_1433_(2016)"
       }
    ],
-   "gun": [
+   "guns": [
       {
          "state": "California",
          "initiative": "Proposition 63",
