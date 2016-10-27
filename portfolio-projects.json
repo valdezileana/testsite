@@ -81,14 +81,6 @@
   },
   {
     "pub" : "los angeles times",
-    "headline" : "Bike-sharing as a bridge between commute gaps",
-    "subhead" : "",
-    "url" : "http://www.latimes.com/local/california/la-me-california-commute-20150707-story.html",
-    "thumbnail" : "projects/bike.png",
-    "id" : ""
-  },
-  {
-    "pub" : "los angeles times",
     "headline" : "California drought: Their rapids response",
     "subhead" : "A1: June 30, 2015 (Print)",
     "url" : "lat-june30.pdf",
