@@ -1,5 +1,29 @@
 [
   {
+    "pub" : "new york magazine",
+    "headline" : "Science of Us: Big 5 Test",
+    "subhead" : "Can you predict your own personality?",
+    "url" : "http://nymag.com/scienceofus/2016/12/predict-your-scores-on-an-important-personality-test.html",
+    "thumbnail" : "projects/personality.png",
+    "id" : ""
+  },
+  {
+    "pub" : "new york magazine",
+    "headline" : "The Divided States of America",
+    "subhead" : "Abortion restrictions in every state",
+    "url" : "http://nymag.com/thecut/2017/01/abortion-access-what-rights-you-have-or-dont-in-your-state.html",
+    "thumbnail" : "projects/abortion.png",
+    "id" : ""
+  },
+  {
+    "pub" : "new york magazine",
+    "headline" : "The Year in Memes",
+    "subhead" : "One meme for every day in 2016",
+    "url" : "http://nymag.com/selectall/2016/12/best-funny-memes-2016-harambe-arthur-dat-boi-joe-biden.html",
+    "thumbnail" : "projects/memes.png",
+    "id" : ""
+  },
+  {
     "pub" : "the washington post",
     "headline" : "Clinton and Trump's August campaign stops",
     "subhead" : "",
@@ -158,6 +182,14 @@
     "url" : "print/bbq.png",
     "thumbnail" : "print/bbq-thumb.png",
     "id" : "bbq"
+  },
+  {
+    "pub" : "fun",
+    "headline" : "Home of the Chicago Cubs and 'The Basement'",
+    "subhead" : "(Four-piece display, acrylic on canvas)",
+    "url" : "print/wrigley.png",
+    "thumbnail" : "print/wrigley.png",
+    "id" : "wrigley"
   },
   {
     "pub" : "fun",
