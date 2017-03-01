@@ -80,13 +80,12 @@ a:hover {
 }
 
 #work-section {
-	margin-top: 10px;
+	margin: 10px auto 0 auto;
 }
 
 .col-xs-4 {
 	position: relative;
-	/*margin-top: 15px;*/
-	margin-bottom: 10px;
+	margin-bottom: 25px;
 }
 
 .thumb {
@@ -100,7 +99,7 @@ a:hover {
 
 #fun-section {
 	display: none;
-	margin-top: 10px;
+	margin: 10px auto 0 auto;
 }
 
 /* -------- CORNER RIBBONS (adapted from trapezoid https://css-tricks.com/examples/ShapesOfCSS/) ----------*/
@@ -266,8 +265,6 @@ span.subhead {
 }
 
 
-
-
 /* ---------- MEDIA QUERIES ----------------*/
 
 @media screen and (max-width: 1000px) {
@@ -302,15 +299,10 @@ span.subhead {
 		margin-top: 50px;
 	}
 
-	#work-section, #fun-section {
-		width: 70%;
-		margin: 0 auto;
-	}
-
-	.col-xs-4 {
+	/*.col-xs-4 {
 		width: 100%;
 		margin-bottom: 15px;
-	}
+	}*/
 
 	figcaption {
 		display: none;
@@ -412,7 +404,6 @@ span.subhead {
 	#copyright{
 		font-size: 0.65em;
 	}
-
 
 }
 
