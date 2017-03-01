@@ -83,7 +83,7 @@ a:hover {
 	margin: 10px auto 0 auto;
 }
 
-.col-xs-4 {
+.col-xs-12 {
 	position: relative;
 	margin-bottom: 25px;
 }
@@ -117,7 +117,7 @@ a:hover {
 	text-transform: uppercase;
 }
 
-.col-xs-4:hover span.ribbon {
+.col-xs-12:hover span.ribbon {
 	opacity: 0;
 	transition: 0.1s;
 }
