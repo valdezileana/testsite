@@ -9,7 +9,7 @@
   },
   {
     "pub" : "new york magazine",
-    "headline" : "The Divided States of America",
+    "headline" : "The Cut: The Divided States of America",
     "subhead" : "Abortion restrictions in every state",
     "url" : "http://nymag.com/thecut/2017/01/abortion-access-what-rights-you-have-or-dont-in-your-state.html",
     "thumbnail" : "projects/abortion.png",
@@ -93,14 +93,6 @@
     "subhead" : "Compare the competition among the nation's three largest pizza chains.",
     "url" : "http://graphics.latimes.com/cheapest-pizza-near-me/",
     "thumbnail" : "projects/pizza.png",
-    "id" : ""
-  },
-  {
-    "pub" : "los angeles times",
-    "headline" : "Rise of Latino population in California counties",
-    "subhead" : "",
-    "url" : "http://www.latimes.com/visuals/graphics/la-me-g-census-latinos-20150708-htmlstory.html",
-    "thumbnail" : "projects/latinos.png",
     "id" : ""
   },
   {
