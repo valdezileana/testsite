@@ -1,7 +1,15 @@
 [
   {
     "pub" : "new york magazine",
-    "headline" : "Science of Us: Big 5 Test",
+    "headline" : "NYC Homelessness Crisis",
+    "subhead" : "Eight New Yorkers explain why it’s so hard to stop being homeless.",
+    "url" : "http://nymag.com/daily/intelligencer/2017/03/nyc-homelessness-crisis.html",
+    "thumbnail" : "projects/homeless.png",
+    "id" : ""
+  },
+  {
+    "pub" : "new york magazine",
+    "headline" : "Big 5 PersonalityTest",
     "subhead" : "Can you predict your own personality?",
     "url" : "http://nymag.com/scienceofus/2016/12/predict-your-scores-on-an-important-personality-test.html",
     "thumbnail" : "projects/personality.png",
@@ -9,7 +17,7 @@
   },
   {
     "pub" : "new york magazine",
-    "headline" : "The Cut: The Divided States of America",
+    "headline" : "The Divided States of America",
     "subhead" : "Abortion restrictions in every state",
     "url" : "http://nymag.com/thecut/2017/01/abortion-access-what-rights-you-have-or-dont-in-your-state.html",
     "thumbnail" : "projects/abortion.png",

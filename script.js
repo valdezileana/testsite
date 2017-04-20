@@ -1,5 +1,4 @@
 $(document).ready(function(){
-console.log('2/28')
     // MUST REFACTOR THIS
 
     $('#work').on('click', function(){
@@ -43,7 +42,7 @@ console.log('2/28')
         type: "GET",
         url: "portfolio-projects.json",
         success: function(data) {
-            buildProjects(data);       
+            buildProjects(data);  
         },
         error: function (jqXHR, exception) {
             var msg = '';
