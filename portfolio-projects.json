@@ -9,7 +9,15 @@
   },
   {
     "pub" : "new york magazine",
-    "headline" : "Big 5 PersonalityTest",
+    "headline" : "NYC Homelessness Crisis",
+    "subhead" : "Eight New Yorkers explain why it’s so hard to stop being homeless.",
+    "url" : "http://nymag.com/daily/intelligencer/2017/03/nyc-homelessness-crisis.html",
+    "thumbnail" : "projects/homeless.png",
+    "id" : ""
+  },
+  {
+    "pub" : "new york magazine",
+    "headline" : "Big 5 Personality Test",
     "subhead" : "Can you predict your own personality?",
     "url" : "http://nymag.com/scienceofus/2016/12/predict-your-scores-on-an-important-personality-test.html",
     "thumbnail" : "projects/personality.png",
