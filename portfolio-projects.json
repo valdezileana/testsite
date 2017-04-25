@@ -1,10 +1,18 @@
 [
   {
     "pub" : "new york magazine",
-    "headline" : "NYC Homelessness Crisis",
-    "subhead" : "Eight New Yorkers explain why it’s so hard to stop being homeless.",
-    "url" : "http://nymag.com/daily/intelligencer/2017/03/nyc-homelessness-crisis.html",
-    "thumbnail" : "projects/homeless.png",
+    "headline" : " 42nd Street Walking Tour",
+    "subhead" : "Eight iconic locations down one street in New York City",
+    "url" : "http://nymag.com/daily/intelligencer/2017/04/nyc-walking-tour-of-42nd-street.html",
+    "thumbnail" : "projects/walking-tour.gif",
+    "id" : ""
+  },
+  {
+    "pub" : "new york magazine",
+    "headline" : "Let’s add some nuance to the ‘Two Americas’ narrative",
+    "subhead" : "Looking at each state through parts of the Human Development Index",
+    "url" : "http://nymag.com/scienceofus/2017/03/lets-add-some-nuance-to-the-two-americas-narrative.html",
+    "thumbnail" : "projects/two-americas.png",
     "id" : ""
   },
   {
@@ -42,7 +50,7 @@
   {
     "pub" : "the washington post",
     "headline" : "Clinton and Trump's August campaign stops",
-    "subhead" : "",
+    "subhead" : "Gif for @PostGraphics twitter account",
     "url" : "https://twitter.com/PostGraphics/status/775385514790772738",
     "thumbnail" : "projects/campaign.gif",
     "id" : ""
@@ -57,8 +65,8 @@
   },
   {
     "pub" : "the washington post",
-    "headline" : "The Olympic city: Sights and sounds of Rio in 360",
-    "subhead" : "",
+    "headline" : "The Olympic City",
+    "subhead" : "Sights and sounds of Rio in 360",
     "url" : "https://www.washingtonpost.com/graphics/sports/olympics/rio-olympics-360-video/",
     "thumbnail" : "projects/rio360.png",
     "id" : ""
@@ -66,14 +74,14 @@
   {
     "pub" : "the washington post",
     "headline" : "The DNC makes me feel 😳 🍻 😂 🚨 👏 💗.",
-    "subhead" : "",
+    "subhead" : "Readers use emojis to respond live to moments during the 2016 Democratic National Convention",
     "url" : "https://www.washingtonpost.com/graphics/politics/2016-election/dnc-emoji-reactions/",
     "thumbnail" : "projects/emoji.png",
     "id" : ""
   },
   {
     "pub" : "la nacion",
-    "headline" : "US Presidents in Argentina",
+    "headline" : "History of U.S. Presidents visiting in Argentina",
     "subhead" : "(\"Las visitas de los presidentes estadounidenses a la Argentina\")",
     "url" : "http://www.lanacion.com.ar/1881864-las-visitas-de-los-presidentes-estadounidenses-a-la-argentina",
     "thumbnail" : "projects/presidentes.png",
@@ -89,7 +97,7 @@
   },
   {
     "pub" : "la nacion",
-    "headline" : "The Oscar Ballot",
+    "headline" : "The Oscar Ballot: Make your predictions",
     "subhead" : "(\"Premios Oscar 2016: armá tu pronóstico\")",
     "url" : "http://www.lanacion.com.ar/1872188-premios-oscar-2016-arma-tu-pronostico",
     "thumbnail" : "projects/oscars.png",
