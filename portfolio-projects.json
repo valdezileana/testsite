@@ -1,7 +1,7 @@
 [
   {
     "pub" : "new york magazine",
-    "headline" : " 42nd Street Walking Tour",
+    "headline" : "42nd Street Walking Tour",
     "subhead" : "Eight iconic locations down one street in New York City",
     "url" : "http://nymag.com/daily/intelligencer/2017/04/nyc-walking-tour-of-42nd-street.html",
     "thumbnail" : "projects/walking-tour.gif",
@@ -149,30 +149,6 @@
     "subhead" : "One director takes her film from script to screen.",
     "url" : "http://apps.northbynorthwestern.com/magazine/2015/spring/finding-solace/",
     "thumbnail" : "projects/solace.png",
-    "id" : ""
-  },
-  {
-    "pub" : "north by northwestern",
-    "headline" : "Dorm room ball pit",
-    "subhead" : "(Video)",
-    "url" : "http://www.northbynorthwestern.com/story/hinman-residents-turn-dorm-room-into-a-ball-pit/",
-    "thumbnail" : "projects/ballpit.png",
-    "id" : ""
-  },
-  {
-    "pub" : "knight lab",
-    "headline" : "Socialite (beta)",
-    "subhead" : "Article analysis by Tweets",
-    "url" : "http://nicolezhu.io/socialite/",
-    "thumbnail" : "projects/socialite.png",
-    "id" : ""
-  },
-  {
-    "pub" : "knight lab",
-    "headline" : "Romaine",
-    "subhead" : "A new way to choose courses",
-    "url" : "https://romaine.herokuapp.com/",
-    "thumbnail" : "projects/romaine.png",
     "id" : ""
   },
   {
