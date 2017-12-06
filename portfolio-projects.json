@@ -1,6 +1,14 @@
 [
   {
     "pub" : "new york magazine",
+    "headline" : "Election Tracker: Senate",
+    "subhead" : "A dynamic, monthly breakdown of the competitive Senate seats",
+    "url" : "http://nymag.com/daily/intelligencer/article/2018-midterms-the-most-competitive-senate-races.html",
+    "thumbnail" : "projects/senate.png",
+    "id" : ""
+  },
+  {
+    "pub" : "new york magazine",
     "headline" : "Love Map",
     "subhead" : "482 Stories of Love and Lust in New York City - Mapped",
     "url" : "https://www.thecut.com/article/map-sex-and-love-on-the-streets-of-nyc.html",
@@ -132,7 +140,7 @@
     "headline" : "California drought: Their rapids response",
     "subhead" : "A1: June 30, 2015 (Print)",
     "url" : "lat-june30.pdf",
-    "thumbnail" : "projects/kern.png",
+    "thumbnail" : "projects/kern-map.png",
     "id" : ""
   },
   {
