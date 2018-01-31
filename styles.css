@@ -86,6 +86,7 @@ a:hover {
 .col-xs-12 {
 	position: relative;
 	margin-bottom: 25px;
+	cursor: pointer;
 }
 
 .thumb {
@@ -104,7 +105,7 @@ a:hover {
 
 /* -------- CORNER RIBBONS (adapted from trapezoid https://css-tricks.com/examples/ShapesOfCSS/) ----------*/
 
-.ribbon{
+.ribbon {
 	padding: 2px 5px;
 	font-size: 10px;
 	font-weight: normal;

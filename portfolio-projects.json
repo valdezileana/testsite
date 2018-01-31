@@ -1,6 +1,14 @@
 [
   {
     "pub" : "new york magazine",
+    "headline" : "'The Russia Story'",
+    "subhead" : "As it was encountered by social media in 2017",
+    "url" : "http://nymag.com/selectall/2017/12/the-complete-russia-story-as-encountered-by-social-media.html",
+    "thumbnail" : "projects/russia.png",
+    "id" : ""
+  },
+  {
+    "pub" : "new york magazine",
     "headline" : "Election Tracker: Senate",
     "subhead" : "A dynamic, monthly breakdown of the competitive Senate seats",
     "url" : "http://nymag.com/daily/intelligencer/article/2018-midterms-the-most-competitive-senate-races.html",
